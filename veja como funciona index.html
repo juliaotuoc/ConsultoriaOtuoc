@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veja Como Funciona - Otuoc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="como-funciona-header">
+        <h1>ENTENDA O OBJETIVO DE CADA AÇÃO!</h1>
+    </header>
+
+    <main class="como-funciona-main">
+        <p class="introducao">
+            Combinamos tecnologia, expertise em saúde mental corporativa e metodologia validada para entregar resultados rápidos e mensuráveis. 
+            Nossa plataforma centraliza agendamentos, relatórios e treinamentos em um único lugar, enquanto nossa rede de psicólogos especializados garante atendimento de qualidade. 
+            Tudo é pensado para simplificar a implantação, reduzir custos operacionais e assegurar conformidade legal — sem burocracia para sua empresa.
+        </p>
+
+        <div class="buttons-container">
+            <button class="circle-button" onclick="openFlow('consultoria-básica')">Consultoria Básica</button>
+            <button class="circle-button" onclick="openFlow('consultoria-premium')">Consultoria premium</button>
+            <button class="circle-button" onclick="openFlow('pacote-palestras')">Pacote Palestras</button>
+            <button class="circle-button" onclick="openFlow('Pacote-Workshop')">Pacote Workshop</button>
+            <button class="circle-button" onclick="openFlow('rh-estratégico')">RH Estratégico</button>
+        </div>
+
+        <!-- Overlay para cobrir a tela inicial -->
+        <div id="overlay" class="overlay"></div>
+
+        <!-- Fluxo de Consultoria básica -->
+        <div id="consultoria-básica-flow" class="flow-box">
+            <div class="flow-header">
+                <h2>CONSULTORIA BÁSICA</h2>
+                <button class="close-button-consultoria-básica" onclick="closeFlow()">×</button>
+            </div>
+            <div class="flow-content">
+                <div class="flow-steps">
+                    <div class="step">
+                        <h3>Acesso a pacotes de terapia online</h3>
+                        <p>Plataforma de terapia corporativa</p>
+                    </div>
+                    <div class="step">
+                        <h3>Treinamento para gestores (online)</h3>
+                        <p>Treinamento para líderes </p>
+                    </div>
+                    <div class="step">
+                        <h3>Palestras periódicas (online)</h3>
+                        <p>Escolha quantas palestras quiser!</p>
+                    </div>
+                    <div class="step">
+                        <h3>Métricas de saúde mental</h3>
+                        <p>Relatórios trimestrais de impacto</p>
+                    </div>
+                </div>
+                <div class="flow-description">
+                    <p>Perfeito para organizações que buscam implementar um programa de saúde mental eficaz, em conformidade com a Lei 14.831/2024, sem complicações ou investimentos elevados.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="images/consultoria.png.png" alt="Imagem Consultoria">
+                </div>
+            </div>
+            <div class="flow-footer">
+                <a href="Consultoria básica.html" class="flow-button-consultoria-básica">Saiba Mais</a>
+            </div>
+        </div>
+
+        <!-- Fluxo de Consultoria Premium -->
+        <div id="consultoria-premium-flow" class="flow-box">
+            <div class="flow-header">
+                <h2>CONSULTORIA PREMIUM</h2>
+                <button class="close-button-consultoria-premium"  onclick="closeFlow()">×</button>
+            </div>
+            <div class="flow-content">
+                <div class="flow-steps">
+                    <div class="step-tree">
+                        <h3>Acesso a pacotes de terapia online</h3>
+                        <p>Plataforma de terapia corporativa</p>
+                    </div>
+                    <div class="step-tree">
+                        <h3>Treinamento para gestores (online ou presencial)</h3>
+                        <p>Treinamento para líderes </p>
+                    </div>
+                    <div class="step-tree">
+                        <h3>Palestras periódicas (online ou presencial)</h3>
+                        <p>Escolha quantas palestras quiser!</p>
+                    </div>
+                    <div class="step-tree">
+                        <h3>Métricas de saúde mental</h3>
+                        <p>Relatórios trimestrais de impacto</p>
+                    </div>
+                    <div class="step-tree">
+                        <h3>Kits de bem-estar</h3>
+                        <p>materiais incríveis sobre saude mental</p>
+                    </div>
+                </div>
+                <div class="flow-description">
+                    <p>Eleve seu programa de saúde mental com workshops e palestras presenciais, além do exclusivo Kit Bem-Estar - tudo para criar uma cultura organizacional de alto desempenho e bem-estar integral. Transforme sua empresa em referência em saúde mental com experiências premium que engajam e transformam.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="images/CONSULTORIA PREMIUM.png" alt="Imagem Consultoria">
+                </div>
+            </div>
+            <div class="flow-footer">
+                <a href="Consultoria premium.html" class="flow-button-consultoria-premium">Saiba Mais</a>
+            </div>
+        </div>
+
+        <!-- Fluxo de Palestras -->
+        <div id="pacote-palestras-flow" class="flow-box">
+            <div class="flow-header">
+                <h2>PACOTE DE PALESTRAS</h2>
+                <button class="close-button-pacote-palestras" onclick="closeFlow()">×</button>
+            </div>
+            <div class="flow-content">
+                <div class="flow-steps">
+                    <div class="step-one">
+                        <h3>Catálogo completo de temas</h3>
+                        <p>Mais de 50 temas estratégicos para desenvolver líderes resilientes e equipes de alta performance.</p>
+                    </div>
+                    <div class="step-one">
+                        <h3>Flexibilidade total</h3>
+                        <p>Conteúdos adaptáveis à realidade da sua empresa, desde startups a grandes corporações.</p>
+                    </div>
+                    <div class="step-one">
+                        <h3>Recursos premium</h3>
+                        <p>Certificado, gravação do evento e relatório de engajamento.</p>
+                    </div>
+                    <div class="step-one">
+                        <h3>Métricas de impacto</h3>
+                        <p>Avaliação de resultados com dados concretos para medir evolução e ROI.</p>
+                    </div>
+                </div>
+                <div class="flow-description">
+                    <p>Pílulas de conhecimento prático para sua equipe! Monte seu próprio pacote com os temas que mais se encaixam na sua cultura organizacional. Conhecimento estratégico em doses certas para times mais saudáveis e produtivos.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="images/palestra.png.png" alt="Imagem Palestras">
+                </div>
+            </div>
+            <div class="flow-footer">
+                <a href="Pacote de Palestra.html" class="flow-button-pacote-palestra">Saiba Mais</a>
+            </div>
+        </div>
+
+        <!-- Pacote Workshop -->
+        <div id="Pacote-Workshop-flow" class="flow-box">
+            <div class="flow-header">
+                <h2>PACOTE WORKSHOP</h2>
+                <button class="close-button-pacote-workshop" onclick="closeFlow()">×</button>
+            </div>
+            <div class="flow-content">
+                <div class="flow-steps">
+                    <div class="step-two">
+                        <h3>Liderança que Cura: Gestão Pós-Traumática</h3>
+                        <p>Estratégias para reconstruir confiança e engajamento após crises organizacionais.</p>
+                    </div>
+                    <div class="step-two">
+                        <h3>Feedback que Transforma (Sem Danos)</h3>
+                        <p>Técnicas assertivas para comunicar críticas construtivas e fortalecer relações profissionais.</p>
+                    </div>
+                    <div class="step-two">
+                        <h3>Decisões Difíceis com Integridade Emocional</h3>
+                        <p>Como equilibrar racionalidade e empatia em escolhas desafiadoras.</p>
+                    </div>
+                    <div class="step-two">
+                        <h3>Gestão de Crises sem Colapso</h3>
+                        <p>Ferramentas práticas para manter a estabilidade sob pressão e guiar times em cenários adversos.</p>
+                    </div>
+                    <div class="step-two">
+                        <h3>Liderança Inclusiva na Prática</h3>
+                        <p>Ações tangíveis para criar ambientes diversos, respeitosos e inovadores.</p>
+                    </div>
+                    <div class="step-two">
+                        <h3>Recursos Exclusivos</h3>
+                        <p>Avaliação 360°, relatório de clima organizacional e indicadores de retenção.</p>
+                    </div>    
+                </div>
+                <div class="flow-description">
+                    <p>Transforme seus líderes em agentes de saúde mental! Workshops práticos e interativos que ensinam técnicas reais para construir times resilientes e produtivos. Liderança humanizada que reduz turnover e eleva os resultados.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="images/treinamento.png.png" alt="Imagem Treinamento">
+                </div>
+            </div>
+            <div class="flow-footer">
+                <a href="Pacote Workshop.HTML" class="flow-button-pacote-workshop">Saiba Mais</a>
+            </div>
+        </div>
+
+        <!-- RH Estratégico -->
+        <div id="rh-estratégico-flow" class="flow-box">
+            <div class="flow-header">
+                <h2>RH ESTRATÉGICO</h2>
+                <button class="close-button-rh-estratégico" onclick="closeFlow()">×</button>
+            </div>
+            <div class="flow-content">
+                <div class="flow-steps">
+                    <div class="step-four">
+                        <h3>Estruturação Organizacional</h3>
+                        <p>Define cargos, hierarquias e fluxos de trabalho para otimizar a eficiência operacional.</p>
+                    </div>
+                    <div class="step-four">
+                        <h3>Remuneração & Benefícios</h3>
+                        <p> Desenha políticas competitivas para atrair, reter e motivar talentos.</p>
+                    </div>
+                    <div class="step-four">
+                        <h3>Atração & Seleção</h3>
+                        <p>Busca e recruta profissionais alinhados à cultura e necessidades da empresa.</p>
+                    </div>
+                    <div class="step-four">
+                        <h3>Cultura & Engajamento</h3>
+                        <p>Promove valores e práticas que fortalecem a conexão e motivação dos colaboradores.</p>
+                    </div>
+                    <div class="step-four">
+                        <h3>Desenvolvimento & Aprendizado</h3>
+                        <p>Oferece capacitação contínua para evolução profissional e organizacional.</p>
+                    </div>
+                    <div class="step-four">
+                        <h3>Performance & Gestão</h3>
+                        <p>Avalia e gerencia resultados individuais e coletivos para impulsionar produtividade.</p>
+                    </div>
+                    <div class="step-four">
+                        <h3>Programa de conexão e pertencimento</h3>
+                        <p>Incentiva relações significativas para aumentar a identificação com a empresa.</p>
+                    </div>
+                    <div class="step-four">
+                        <h3>Diversidade & Inclusão</h3>
+                        <p>Garante um ambiente acolhedor e equitativo, valorizando diferenças.</p>
+                    </div>
+                    <div class="step-four">
+                        <h3>Consultoria para Trabalho Híbrido</h3>
+                        <p>Orienta na implementação de modelos flexíveis que equilibrem produtividade e bem-estar.</p>
+                    </div>    
+                </div>
+                <div class="flow-description">
+                    <p>O objetivo do RH estratégico é alinhar as práticas de gestão de pessoas aos objetivos organizacionais, promovendo vantagem competitiva. Ele foca em atrair, reter e desenvolver talentos, além de fortalecer a cultura corporativa e impulsionar a inovação. Atua como parceiro do negócio, antecipando demandas e contribuindo para resultados sustentáveis, integrando pessoas, estratégia e performance.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="images/RH ESTRATÉGICO.png" alt="Imagem Treinamento">
+                </div>
+            </div>
+            <div class="flow-footer">
+                <a href="RH estratégico.html" class="flow-button-rh-estratégico">Saiba Mais</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <!-- Botão Voltar -->
+    <a href="Julia Otuoc 1 index.html" class="botao-voltar">Voltar</a>
+    
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/5511917826489" target="_blank" class="whatsapp-logo">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

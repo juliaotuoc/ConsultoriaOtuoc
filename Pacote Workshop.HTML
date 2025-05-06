@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamentos - Otuoc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="treinamentos-container">
+        <!-- Cabeçalho -->
+        <div class="treinamentos-header">
+            <h1>PACOTE WORKSHOP</h1>
+        </div>
+        
+        <!-- Texto Introdutório -->
+        <div class="texto-intro">
+            <p>
+                Em um mercado onde 72% dos colaboradores citam a liderança como principal fator de estresse no trabalho, nosso Pacote de Workshops foi cuidadosamente desenvolvido para equipar gestores com ferramentas práticas de gestão humanizada. 
+                Mais do que treinamentos, são experiências imersivas que combinam neurociência, psicologia organizacional e cases reais para criar líderes que inspiram saúde mental e alta performance.
+            </p>
+        </div>
+        
+        <main class="treinamentos-main">
+            <div class="treinamentos-buttons-container">
+                <!-- Linha 1 -->
+                <div class="treinamentos-row">
+                    <button class="treinamentos-oval-button" onclick="openModal('Desenvolvendo-Autonomia-no-Trabalho')">
+                        <h3>Liderança que Cura: Gestão Pós-Traumática</h3>
+                    </button>
+                    
+                    <button class="treinamentos-oval-button" onclick="openModal('Liderança-Empática-e-Humanizada')">
+                        <h3>Feedback que Transforma (Sem Danos)</h3>
+                    </button>
+
+                    <button class="treinamentos-oval-button" onclick="openModal('Comunicação-Não-Violenta-(CNV)')">
+                        <h3>Decisões Difíceis com Integridade Emocional</h3>
+                    </button>
+
+                    <button class="treinamentos-oval-button" onclick="openModal('Gestão-de-Conflitos-e-Mediação')">
+                        <h3>Gestão de Crises sem Colapso</h3>
+                    </button>
+
+                    <button class="treinamentos-oval-button" onclick="openModal('Resiliência-e-Adaptabilidade')">
+                        <h3>Liderança Inclusiva na Prática</h3>
+                    </button>
+
+                    <button class="treinamentos-oval-button" onclick="openModal('Gestão-do-Tempo-e-Priorização')">
+                        <h3>Recursos excluvivos</h3>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Overlay -->
+            <div id="treinamentos-overlay" class="treinamentos-overlay"></div>
+    
+            <!-- Modal Desenvolvendo Autonomia no Trabalho -->
+            <div id="Desenvolvendo-Autonomia-no-Trabalho-modal" class="treinamentos-modal">
+                <div class="treinamentos-modal-header">
+                    <h2>LIDERANÇA QUE CURA: GESTÃO PÓSTRAUMÁTICA</h2>
+                    <button class="treinamentos-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="treinamentos-modal-content">
+                    <p>
+                    Programa de 12 horas dividido em:
+                    </p>
+
+                    <ul class="lista-nivel-1">
+                    <li>Fase 1: Reconhecimento do Trauma
+                    <ul class="lista-nivel-2">
+                        <li>Técnicas de escuta ativa especializada</li>
+                        <li>Mapeamento de impactos emocionais</li>
+                    </ul>
+                </li>
+                    <li>Fase 2: Reconstrção Coletiva
+                        <ul class="lista-nivel-2">
+                        <li>Cerimônias de recomeço</li>
+                        <li>Elaboração de novo contrato psicológico</li>
+                    </ul>
+                </li>    
+                    <li>Fase 3: Fortalecimento Contínuo
+                        <ul class="lista-nivel-2">
+                        <li>Criação de comitês de cuidado</li>
+                        <li>Protocolos de monitoramento</li>
+                    </ul>
+                </li>
+                </div>
+                <div class="treinamentos-modal-footer">
+                    <a href="https://forms.gle/kDLV71Hgmn561AnT8" target="_blank" class="treinamentos-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/seulink" target="_blank" class="treinamentos-action-button">Agende um bape papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal Liderança Empática e Humanizada -->
+            <div id="Liderança-Empática-e-Humanizada-modal" class="treinamentos-modal">
+                <div class="treinamentos-modal-header">
+                    <h2>FEEDBACK QUE TRANSFORMA</h2>
+                    <button class="treinamentos-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="treinamentos-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Metodologia VALOR:
+                        <ul class="lista-nivel-2">
+                        <li>V: Validar sentimentos</li>
+                        <li>A: Apresentar fatos</li>
+                        <li>L: Linguagem não-violenta</li>
+                        <li>O: Oportunidade mútua</li>
+                        <li>R: Responsabilidade compartilhada</li>
+                    </ul>
+                </li>
+                    <li>Inclui:
+                        <ul class="lista-nivel-2">
+                        <li>Role playing com filmagem e análise</li>
+                        <li>Manual de frases transformadoras</li>
+                        <li>Guia de feedback por tipo de personalidade</li>
+                    </ul>
+                </li>  
+                </div>
+                <div class="treinamentos-modal-footer">
+                    <a href="https://forms.gle/kDLV71Hgmn561AnT8" target="_blank" class="treinamentos-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/seulink" target="_blank" class="treinamentos-action-button">Agende um bape papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal Comunicação Não Violenta (CNV) -->
+            <div id="Comunicação-Não-Violenta-(CNV)-modal" class="treinamentos-modal">
+                <div class="treinamentos-modal-header">
+                    <h2>DECISÕES DIFÍCEIS COM INTEGRIDADE EMOCIONAL</h2>
+                    <button class="treinamentos-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="treinamentos-modal-content">
+                    <ul class="lista-nivel-1">
+                        <li>Análise de casos reais (anonimizados)
+                        <li>Simulação de cenários extremos
+                        <li>Kit de sobrevivência emocional
+                        </ul>
+                    </li>  
+                        <p>
+                        Framework DECIDIR:
+                        </p>
+                        <ul class="lista-nivel-2">
+                            <li>D: Dados concretos</li>
+                            <li>E: Ética aplicada</li>
+                            <li>C: Consequências mapeadas</li>
+                            <li>I: Intuição informada</li>
+                            <li>D: Diversidade de perspectivas</li>
+                            <li>I: Implementação cuidadosa</li>
+                            <li>R: Revisão sistemática</li>
+                                
+                </div>
+                <div class="treinamentos-modal-footer">
+                    <a href="https://forms.gle/kDLV71Hgmn561AnT8" target="_blank" class="treinamentos-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/seulink" target="_blank" class="treinamentos-action-button">Agende um bape papo</a>
+                </div>
+            </div>
+    
+            <!-- Gestão de Conflitos e Mediação -->
+            <div id="Gestão-de-Conflitos-e-Mediação-modal" class="treinamentos-modal">
+                <div class="treinamentos-modal-header">
+                    <h2>GESTÃO DE CRISES SEM COLAPSO</h2>
+                    <button class="treinamentos-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="treinamentos-modal-content">
+                    <p>
+                        Plano em 5 estágios:
+                        </p>
+    
+                        <ul class="lista-nivel-1">
+                        <li>Preparação:
+                            <ul class="lista-nivel-2">
+                            <li>Mapeamento de vulnerabilidades</li>
+                            <li>Design de equipe de crise
+                                <li>Análise de casos reais (anonimizados)
+                                <li>Simulação de cenários extremos
+                                <li>Kit de sobrevivência emocional
+                            </ul>
+                        </li>     
+                        <li>Resposta Imediata:
+                                <ul class="lista-nivel-2">
+                                <li>Scripts de comunicação</li>
+                                <li>Postura corporal e vocal</li>
+                            </ul>
+                        </li>
+                        <li>Contenção:
+                            <ul class="lista-nivel-2">
+                            <li>Rituais de acalanto coletivo</li>
+                            <li>Espaços seguros de descompressão</li>
+                            </ul>
+                        </li>
+                        <li>Recuperação:
+                            <ul class="lista-nivel-2">
+                            <li>Narrativa de superação</li>
+                            <li>Lições aprendidas</li>
+                            </ul>
+                        </li>
+                        <li>Renovação:
+                            <ul class="lista-nivel-2">
+                            <li>Cerimônias de virada de página</li>
+                            <li>Novos protocolos</li>
+                </div>
+                <div class="treinamentos-modal-footer">
+                    <a href="https://forms.gle/kDLV71Hgmn561AnT8" target="_blank" class="treinamentos-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/seulink" target="_blank" class="treinamentos-action-button">Agende um bape papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal Resiliência e Adaptabilidade -->
+            <div id="Resiliência-e-Adaptabilidade-modal" class="treinamentos-modal">
+                <div class="treinamentos-modal-header">
+                    <h2>LIDERANÇA INCLUSIVA NA PRÁTICA</h2>
+                    <button class="treinamentos-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="treinamentos-modal-content">
+                    <p>
+                    Toolkit completo:
+                    </p>
+
+                    <ul class="lista-nivel-1">
+                    <li>Checklist de vieses inconscientes
+                    <li>Matriz de inclusão diária
+                    <li>Jogo de tabuleiro corporativo
+                    <li>Guia de linguagem inclusiva
+                    <li>Adaptação de processos para:    
+                        <ul class="lista-nivel-2">
+                        <li>Pessoas neurodiversas</li>
+                        <li>Diversidade geracional</li>
+                        <li>Culturas diversas</li> 
+                    </ul>
+                </li>    
+                </div>
+                <div class="treinamentos-modal-footer">
+                    <a href="https://forms.gle/kDLV71Hgmn561AnT8" target="_blank" class="treinamentos-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/seulink" target="_blank" class="treinamentos-action-button">Agende um bape papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal Gestão do Tempo e Priorização -->
+            <div id="Gestão-do-Tempo-e-Priorização-modal" class="treinamentos-modal">
+                <div class="treinamentos-modal-header">
+                    <h2>RECURSOS EXCLUSIVOS</h2>
+                    <button class="treinamentos-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="treinamentos-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Avaliação 360° com:
+                        <ul class="lista-nivel-2">
+                        <li>Autoavaliação</li>
+                        <li>Pares</li>
+                        <li>Liderados</li>
+                        <li>Stakeholders</li>
+                    </ul>
+                </li> 
+                    <li>Relatório de Clima Organizacional:
+                        <ul class="lista-nivel-2">
+                        <li>Análise por departamento</li>
+                        <li>Comparativo histórico</li>
+                        <li>Priorização de ações</li>
+                    </ul>
+                </li>     
+                    <li>Indicadores de Retenção:</li>
+                        <ul class="lista-nivel-2">
+                        <li>Modelo preditivo</li>
+                        <li>Cálculo de custo de rotatividade</li>
+                        <li>Planos de retenção personalizados</li>
+                    </ul>
+                </li>                    
+                </div>
+                <div class="treinamentos-modal-footer">
+                    <a href="https://forms.gle/kDLV71Hgmn561AnT8" target="_blank" class="treinamentos-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/seulink" target="_blank" class="treinamentos-action-button">Agende um bape papo</a>
+                </div>
+            </div>
+    
+             </main>
+    
+    <!-- Botão Voltar -->
+    <a href="Julia Otuoc 1 index.html" class="botao-voltar">Voltar</a>
+    
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/5511917826489" target="_blank" class="whatsapp-logo">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

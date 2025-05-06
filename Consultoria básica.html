@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria - Otuoc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="consultoria-container">
+        <!-- Cabeçalho -->
+        <div class="consultoria-header">
+            <h1>CONSULTORIA BÁSICA</h1>
+        </div>
+        
+        <!-- Texto Introdutório -->
+        <div class="texto-intro">
+            <p>
+                Oferecemos um programa completo para empresas cumprirem a Lei 14.831/2024 com eficiência e baixo custo. 
+                Inclui acesso a psicólogos especializados, treinamento para gestores e métricas de acompanhamento - tudo implementado em 7 dias. Solução prática que transforma o bem-estar em produtividade mensurável. 
+                Conformidade legal garantida com suporte especializado do início ao fim.
+            </p>
+        </div>
+        
+        <main class="consultoria-main">
+            <div class="consultoria-buttons-container">
+                <!-- Linha 1 -->
+                <div class="consultoria-row">
+                    <button class="consultoria-oval-button" onclick="openModal('estresse-minoritario')">
+                        <h3>Plataforma de Terapia</h3>
+                    </button>
+                    
+                    <button class="consultoria-oval-button" onclick="openModal('capacitismo')">
+                        <h3>Treinamento para Líderes</h3>
+                    </button>
+
+                    <button class="consultoria-oval-button" onclick="openModal('lgbtqia')">
+                        <h3>Palestras Mensais</h3>
+                    </button>
+
+                    <button class="consultoria-oval-button" onclick="openModal('diversidade')">
+                        <h3>Métricas e Relatórios</h3>
+                    </button>
+
+                   
+                </div>
+            </div>
+    
+            <!-- Overlay -->
+            <div id="consultoria-overlay" class="consultoria-overlay"></div>
+    
+           <!-- Modal Estresse Minoritário -->
+<div id="estresse-minoritario-modal" class="consultoria-modal">
+    <div class="consultoria-modal-header">
+        <h2>PLATAFORMA DE TERAPIA</h2>
+        <button class="consultoria-close-button" onclick="closeModal()">×</button>
+    </div>
+    <div class="consultoria-modal-content">
+        <ul class="lista-nivel-1">
+            <li>Acesso limitado a 4 sessões por mês por colaborador com psicólogos com diversas abordagens</li>
+            <li>Modalidades flexíveis: individuais, em grupo ou temáticas (luto, ansiedade, conflitos de equipes)</li>
+            <li>Ambiente 100% seguro e sigiloso, com tecnologia de ponta para videoconferências</li>
+            <li>Painel administrativo para acompanhamento de utilização (sem acesso ao conteúdo)</li>
+        </ul>
+    </div>
+    <div class="consultoria-modal-footer">
+        <a href="https://forms.gle/UHEiyfn1HE9oBYvh6" target="_blank" class="consultoria-action-button">Solicite um orçamento</a>
+        <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="consultoria-action-button">Agende um bate papo</a>
+    </div>
+</div>
+    
+            <!-- Modal Capacitismo -->
+            <div id="capacitismo-modal" class="consultoria-modal">
+                <div class="consultoria-modal-header">
+                    <h2>WORKSHOP TRANSFORMADOR PARA LÍDERES</h2>
+                    <button class="consultoria-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="consultoria-modal-content">
+                    <ul class="lista-nivel-1">               
+                        <li>Programa modular "Liderança Humanizada 4.0" com 12 certificações possíveis</li>
+                        <ul class="lista-nivel-2">
+                            <li>Carga horária flexível: de 8h a 40h conforme necessidades da equipe</li>
+                            <li>Conteúdos práticos sobre:
+                                <ul class="lista-nivel-3">
+                                    <li>Comunicação não-violenta aplicada ao ambiente corporativo</li>
+                                    <li>Identificação precoce de sinais de adoecimento mental</li>
+                                    <li>Ferramentas para criar ambientes psicologicamente seguros</li>
+                                </ul>
+                    </ul>
+                </div>
+                <div class="consultoria-modal-footer">
+                    <a href="https://forms.gle/UHEiyfn1HE9oBYvh6" target="_blank" class="consultoria-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="consultoria-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal LGBTQIAPN+ -->
+            <div id="lgbtqia-modal" class="consultoria-modal">
+                <div class="consultoria-modal-header">
+                    <h2>PALESTRAS PERIÓDICAS</h2>
+                    <button class="consultoria-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="consultoria-modal-content">
+                <ul class="lista-nivel-1">
+                    <li>Catálogo com mais de 50 temas ministrados por especialistas renomados</li>
+                    <li>Duração de 1 a 1 hora e meia, com interação ao vivo e sessão Q&A</li>
+                    <li>Exemplos de temas mais demandados:
+                    <ul class="lista-nivel-2">
+                        <li>"Sinais silenciosos do burnout - como identificar e agir"</li>
+                        <li>"Produtividade saudável: mitos e verdades"</li>
+                        <li>"Resiliência emocional em tempos de mudança"</li>
+                    </ul>
+                </li>
+                    <li>Relatório pós-evento com análise de engajamento</li>
+                </ul>    
+                </div>
+                <div class="consultoria-modal-footer">
+                    <a href="https://forms.gle/UHEiyfn1HE9oBYvh6" target="_blank" class="consultoria-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="consultoria-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal Diversidade -->
+            <div id="diversidade-modal" class="consultoria-modal">
+                <div class="consultoria-modal-header">
+                    <h2>MÉTRICAS DE SAÚDE MENTAL</h2>
+                    <button class="consultoria-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="consultoria-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Avaliação trimestral através de:
+                        <ul class="lista-nivel-2">
+                        <li>Questionários científicos validados</li>
+                        <li>Análise de indicadores indiretos (absenteísmo, turnover)</li>
+                        <li>Entrevistas confidenciais com amostragem representativa</li>
+                    </ul>
+                </li>    
+                    <li>Relatórios com:
+                    <ul class="lista-nivel-2">
+                        <li>Heatmap de áreas críticas na organização</li>
+                        <li>Benchmarking setorial</li>
+                        <li>Recomendações de ações prioritárias</li>
+                    </ul>
+                </li>
+                </ul>                    
+                </div>
+                <div class="consultoria-modal-footer">
+                    <a href="https://forms.gle/UHEiyfn1HE9oBYvh6" target="_blank" class="consultoria-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="consultoria-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+            </div>
+        </main>
+    
+    <!-- Botão Voltar -->
+    <a href="veja como funciona index.html" class="botao-voltar">Voltar</a>
+    
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/5511917826489" target="_blank" class="whatsapp-logo">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

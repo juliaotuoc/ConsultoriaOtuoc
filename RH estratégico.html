@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RH Estratégico - Otuoc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="rh-estratégico-container">
+        <!-- Cabeçalho -->
+        <div class="rh-estratégico-header">
+            <h1>RH Estratégico</h1>
+        </div>
+        
+        <!-- Texto Introdutório -->
+        <div class="texto-intro">
+            <p>
+                Oferecemos serviços especializados em RH Estratégico, desde estruturação de cargos até programas de engajamento. 
+                Cada solução é independente – você contrata apenas o que precisa hoje e escala conforme sua demanda. 
+                Personalizamos módulos como pesquisa salarial, programas de D&I ou trilhas de aprendizagem, ou montamos um pacote completo para transformar sua gestão de pessoas. 
+                Tudo com foco em resultados mensuráveis e alinhado à sua cultura. 
+                Nosso objetivo: tornar seu RH um diferencial competitivo.
+            </p>
+        </div>
+        
+        <main class="rh-estratégico-main">
+            <div class="rh-estratégico-buttons-container">
+                <!-- Linha 1 -->
+                <div class="rh-estratégico-row">
+                    <button class="rh-estratégico-oval-button" onclick="openModal('estresse-minoritario')">
+                        <h3>Estruturação Organizacional</h3>
+                    </button>
+                    
+                    <button class="rh-estratégico-oval-button" onclick="openModal('capacitismo')">
+                        <h3>Remuneração & Benefícios</h3>
+                    </button>
+
+                    <button class="rh-estratégico-oval-button" onclick="openModal('lgbtqia')">
+                        <h3>Atração & Seleção</h3>
+                    </button>
+
+                    <button class="rh-estratégico-oval-button" onclick="openModal('diversidade')">
+                        <h3>Cultura & Engajamento</h3>
+                    </button>
+
+                    <button class="rh-estratégico-oval-button" onclick="openModal('desenvolvimento')">
+                        <h3>Desenvolvimento & Aprendizado</h3>
+                    </button>
+
+                    <button class="rh-estratégico-oval-button" onclick="openModal('performance')">
+                        <h3>Performance & Gestão</h3>
+                    </button>
+
+                    <button class="rh-estratégico-oval-button" onclick="openModal('Diversidade')">
+                        <h3>Diversidade & Inclusão</h3>
+                    </button>
+
+                    <button class="rh-estratégico-oval-button" onclick="openModal('híbrido')">
+                        <h3>Consultoria para Trabalho Híbrido</h3>
+                    </button>
+                   
+                    <button class="rh-estratégico-oval-button" onclick="openModal('pertencimento')">
+                        <h3>Programa de Conexão e Pertencimento</h3>
+                    </button>
+                    
+            </div>
+    
+            <!-- Overlay -->
+            <div id="rh-estratégico-overlay" class="rh-estratégico-overlay"></div>
+    
+           <!-- Modal Estresse Minoritário -->
+<div id="estresse-minoritario-modal" class="rh-estratégico-modal">
+    <div class="rh-estratégico-modal-header">
+        <h2>ESTRUTURAÇÃO ORGANIZACIONAL</h2>
+        <button class="rh-estratégico-close-button" onclick="closeModal()">×</button>
+    </div>
+    <div class="rh-estratégico-modal-content">
+        <ul class="lista-nivel-1">
+            <li>Mapeamento e descrição de cargos (competências, responsabilidades)</li>
+            <li>Desenho de planos de carreira e trilhas de desenvolvimento</li>
+            <li>Criação de matrizes de sucessão para cargos críticos</li>
+        </ul>
+    </div>
+    <div class="rh-estratégico-modal-footer">
+        <a href="https://forms.gle/MEfQa4z12vMFT1Sv5" target="_blank" class="rh-estratégico-action-button">Solicite um orçamento</a>
+        <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="rh-estratégico-action-button">Agende um bate papo</a>
+    </div>
+</div>
+    
+            <!-- Modal Capacitismo -->
+            <div id="capacitismo-modal" class="rh-estratégico-modal">
+                <div class="rh-estratégico-modal-header">
+                    <h2>REMUNERAÇÃO & BENEFÍCIOS</h2>
+                    <button class="rh-estratégico-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="rh-estratégico-modal-content">
+                    <ul class="lista-nivel-1">               
+                        <li>Pesquisa salarial setorial (benchmarking)</li>
+                        <li>Desenho de faixas salariais e política de revisão</li>
+                        <li>Criação de programas de benefícios flexíveis (ex.: saúde, educação, qualidade de vida)</li>
+                </div>
+                <div class="rh-estratégico-modal-footer">
+                    <a href="https://forms.gle/MEfQa4z12vMFT1Sv5" target="_blank" class="rh-estratégico-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="rh-estratégico-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal LGBTQIAPN+ -->
+            <div id="lgbtqia-modal" class="rh-estratégico-modal">
+                <div class="rh-estratégico-modal-header">
+                    <h2>ATRAÇÃO & SELEÇÃO</h2>
+                    <button class="rh-estratégico-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="rh-estratégico-modal-content">
+                <ul class="lista-nivel-1">
+                    <li>Design de processos seletivos com viés inclusivo</li>
+                    <li>Assessoria para employer branding (posicionamento do empregador)</li>
+                    <li>Triagem técnica e avaliação por competências</li>
+                </div>
+                <div class="rh-estratégico-modal-footer">
+                    <a href="https://forms.gle/MEfQa4z12vMFT1Sv5" target="_blank" class="rh-estratégico-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="rh-estratégico-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal Diversidade -->
+            <div id="diversidade-modal" class="rh-estratégico-modal">
+                <div class="rh-estratégico-modal-header">
+                    <h2>CULTURA & ENGAJAMENTO</h2>
+                    <button class="rh-estratégico-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="rh-estratégico-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Diagnóstico de clima organizacional (pesquisas e focus groups)</li>
+                    <li>Criação de programas de reconhecimento e retenção</li>
+                    <li>Desenho de rituais culturais alinhados aos valores</li>                
+                </div>
+                <div class="rh-estratégico-modal-footer">
+                    <a href="https://forms.gle/MEfQa4z12vMFT1Sv5" target="_blank" class="rh-estratégico-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="rh-estratégico-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Desenvolvimento e Aprendizado -->
+            <div id="desenvolvimento-modal" class="rh-estratégico-modal">
+                <div class="rh-estratégico-modal-header">
+                    <h2>DESENVOLVIMENTO & APRENDIZADO</h2>
+                    <button class="rh-estratégico-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="rh-estratégico-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Mapeamento de competências críticas</li>
+                    <li>Criação de academias corporativas (L&D)</li>
+                    <li>Programas de mentoria e liderança</li>                
+                </div>
+                <div class="rh-estratégico-modal-footer">
+                    <a href="https://forms.gle/MEfQa4z12vMFT1Sv5" target="_blank" class="rh-estratégico-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="rh-estratégico-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Performace e gestão -->
+            <div id="performance-modal" class="rh-estratégico-modal">
+                <div class="rh-estratégico-modal-header">
+                    <h2>PERFORMANCE & GESTÃO</h2>
+                    <button class="rh-estratégico-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="rh-estratégico-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Modelos de avaliação de desempenho (metodologias modernas)</li>
+                    <li>Desenho de programas de metas e OKRs</li>
+                    <li>Treinamento para líderes em feedback e desenvolvimento</li>                
+                </div>
+                <div class="rh-estratégico-modal-footer">
+                    <a href="https://forms.gle/MEfQa4z12vMFT1Sv5" target="_blank" class="rh-estratégico-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="rh-estratégico-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Consultoria para trabalho híbrido -->
+            <div id="Diversidade-modal" class="rh-estratégico-modal">
+                <div class="rh-estratégico-modal-header">
+                    <h2>DIVERSIDADE & INCLUSÃO</h2>
+                    <button class="rh-estratégico-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="rh-estratégico-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Diagnóstico de equidade (gênero, raça, PCDs)</li>
+                    <li>Planos de ação para inclusão efetiva</li>
+                    <li>Treinamentos em vieses inconscientes</li>                
+                </div>
+                <div class="rh-estratégico-modal-footer">
+                    <a href="https://forms.gle/MEfQa4z12vMFT1Sv5" target="_blank" class="rh-estratégico-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="rh-estratégico-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Programa de conexão e pertencimento -->
+            <div id="híbrido-modal" class="rh-estratégico-modal">
+                <div class="rh-estratégico-modal-header">
+                    <h2>CONSULTORIA PARA TRABALHO HÍBRIDO</h2>
+                    <button class="rh-estratégico-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="rh-estratégico-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Diagnóstico de readiness para modelos híbridos</li>
+                    <li>Criação de políticas de flexibilidade (ex.: dias presenciais, gestão por resultados)</li>
+                    <li>Treinamento para líderes em gestão remota humanizada</li>                
+                </div>
+                <div class="rh-estratégico-modal-footer">
+                    <a href="https://forms.gle/MEfQa4z12vMFT1Sv5" target="_blank" class="rh-estratégico-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="rh-estratégico-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal Programa de conexão e pertencimento -->
+            <div id="pertencimento-modal" class="rh-estratégico-modal">
+                <div class="rh-estratégico-modal-header">
+                    <h2>PROGRAMA DE CONEXÃO E PERTENCIMENTO</h2>
+                    <button class="rh-estratégico-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="rh-estratégico-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Estratégias para reduzir isolamento em equipes dispersas:
+                        <ul class="lista-nivel-2">
+                        <li>Rituais virtuais de integração</li>
+                        <li>Programas de buddy system (parcerias entre colaboradores)</li>
+                        <li>Eventos temáticos não-work related (ex.: clubes de livro virtual)</li>  
+                    </ul>              
+                </div>
+                <div class="rh-estratégico-modal-footer">
+                    <a href="https://forms.gle/MEfQa4z12vMFT1Sv5" target="_blank" class="rh-estratégico-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="rh-estratégico-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+            </div>
+        </main>
+    
+    <!-- Botão Voltar -->
+    <a href="veja como funciona index.html" class="botao-voltar">Voltar</a>
+    
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/5511917826489" target="_blank" class="whatsapp-logo">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

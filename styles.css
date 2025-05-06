@@ -1,0 +1,3182 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Layout Responsivo Base */
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Media Queries Globais */
+@media (max-width: 768px) {
+    /* Estilos para tablets */
+}
+
+@media (max-width: 480px) {
+    /* Estilos para smartphones */
+}
+
+/* Estilos Específicos da Página Inicial */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    background-color: #f8f3f2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.6rem;
+}
+
+.right-side {
+    background-color: #ff6f61;
+    padding: 2rem;
+}
+
+.logo-container {
+    margin-bottom: -3rem; /* Ajuste para sobrepor a imagem */
+    text-align: center;
+    z-index: 2; /* Garante que a logo fique acima da imagem */
+    position: relative;
+}
+
+.logo {
+    max-width: 400px;
+    height: auto;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.support-image {
+    max-width: 90%; /* Imagem maior */
+    height: auto;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 1rem; /* Adicione esta linha para controlar a margem inferior */
+}
+
+/* Menu de Navegação */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 1.5rem 0;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 2.5rem; /* Tamanho aumentado das letras */
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: transparent;
+    padding-left: 1rem;
+}
+
+.dropdown-content a {
+    display: block;
+    font-size: 1.8rem; /* Tamanho dos itens do dropdown */
+    margin: 0.8rem 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsividade */
+@media (min-width: 992px) {
+    .container {
+        flex-direction: row;
+    }
+    
+    .left-side {
+        width: 60%;
+    }
+    
+    .right-side {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav ul li a {
+        font-size: 2.5rem;
+    }
+
+    .dropdown-content a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    nav ul li a {
+        font-size: 2rem;
+    }
+}
+
+.dropdown-content a {
+    font-size: 1.5rem;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+nav ul li a {
+    font-size: 1.8rem;
+}
+
+.logo {
+    max-width: 160px;
+}
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f3f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.preloader-content {
+    text-align: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ff6f61;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Animações de entrada */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effects */
+.hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.05);
+}
+
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+    background-color: #fff; /* Fundo branco para todo o site */
+}
+
+/* quem somos*/
+.quem-somos-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/* Estilo da imagem */
+.quem-somos-imagem {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: -3rem;
+    margin-bottom: -3rem;
+    margin-left: -2rem;
+}
+
+.quem-somos-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Estilo do texto */
+.quem-somos-texto {
+    width: 70%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+.quem-somos-texto h1 {
+    font-size: 2.5rem;
+    color: #114232;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.quem-somos-texto p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Botão Voltar */
+.botao-voltar {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.botao-voltar:hover {
+    background-color: #e0554b;
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .quem-somos-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .quem-somos-imagem, .quem-somos-texto {
+        width: 100%;
+        margin-left: auto;
+    }
+    .botao-voltar {
+        position: fixed;
+        align-self: center;
+        margin-top: 1.5rem;
+    }
+}
+
+/* Estilos específicos para a página Como Funciona */
+.como-funciona-header {
+    color: #114232;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.como-funciona-header h1 {
+    font-size: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.como-funciona-main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1rem 4rem;
+}
+
+.introducao {
+    font-size: 2rem;
+    line-height: 2;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin: 5rem 0;
+    flex-wrap: wrap;
+}
+
+.circle-button {
+    width: 90px;
+    height: 90px;
+    border-radius: 70%;
+    border: none;
+    background-color: #ff6f61;
+    color: #333;
+    font-size: 120px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8.4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circle-button:hover {
+    transform: scale(1.05);
+    background-color: #e0554b;
+}
+
+.whatsapp-logo {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.whatsapp-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.whatsapp-logo:hover {
+    transform: scale(1.1);
+    background-color: #128C7E;
+}
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+/* Caixa de Fluxo */
+.flow-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    max-width: 1350px;
+    max-height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 200;
+    overflow-y: auto;
+    padding: 2rem;
+}
+
+.flow-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.9rem;
+    padding-bottom: 1rem;
+    position: relative;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.flow-header h2 {
+    color: #114232;
+    font-size: 2.4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.close-button-consultoria-básica {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff6f61;
+    color: #333;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-button-consultoria-premium{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #004aad;
+    color: #ffff;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-button-pacote-workshop{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fac04b;
+    color:#114232;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-button-rh-estratégico{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4B0082;
+    color:#fff;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-button-pacote-palestras{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #114232;
+    color:#ffffff;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #e0554b;
+    transform: scale(1.1);
+}
+
+/* Layout do conteúdo principal */
+.flow-content {
+    display: grid;
+    grid-template-columns: 55% 30% 20%; /* Colunas ajustadas */
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.flow-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.step {
+    background-color: #ff6f61;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 57%;
+    margin-right: -50px;
+}
+
+.step h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.step p {
+    color: #333;
+}
+
+.step-one {
+    background-color: #114232;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 57%;
+    margin-right: -50px;
+}
+
+.step-one h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.step-one p {
+    color: white;
+}
+
+.step-two {
+    background-color: #fac04b;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 57%;
+    margin-right: -50px;
+}
+
+.step-two h3 {
+    color: #114232;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.step-two p {
+    color: #114232;
+}
+
+
+.step-tree {
+    background-color: #004aad;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 57%;
+    margin-right: -50px;
+}
+
+.step-tree h3 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.step-tree p {
+    color: #ffffff;
+}
+
+.step-four {
+    background-color: #4B0082;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 57%;
+    margin-right: -50px;
+}
+
+.step-four h3 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.step-four p {
+    color: #ffffff;
+}
+
+.flow-description {
+    grid-column: 2;
+    padding: 1.2rem 1rem 1.5rem 0.5rem;
+    margin-left: -18rem; /* Este é o segredo para puxar para esquerda */
+    margin-right: 8rem;
+    color: #555;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    border-left: 2px solid #ff6f61;
+    border-right: none;
+    background-color: transparent;
+    text-align: center;
+    align-self: center;
+}
+
+.flow-image {
+    grid-column: 3;
+    padding-left: 1rem;
+    align-self: center;
+}
+
+.flow-image img {
+    max-width: 300%;
+    margin-left: -10rem;
+}
+
+.flow-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #f0f0f0;
+}
+
+.flow-button-consultoria-básica{
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #333;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.flow-button-consultoria-premium{
+    display: inline-block;
+    background-color: #004aad;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.flow-button-pacote-workshop{
+    display: inline-block;
+    background-color: #fac04b;
+    color: #333;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.flow-button-rh-estratégico{
+    display: inline-block;
+    background-color: #4B0082;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.flow-button-pacote-palestra{
+    display: inline-block;
+    background-color: #114232;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.flow-button:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+/* Responsividade - Desktop */
+@media (min-width: 992px) {
+    .como-funciona-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .introducao {
+        font-size: 1.6rem;
+    }
+    
+    .circle-button {
+        width: 180px;
+        height: 180px;
+        font-size: 2.3rem;
+    }
+    
+    .flow-content {
+        display: grid;
+        grid-template-columns: 55% 25% 20%; /* Colunas ajustadas */
+        gap: 1.5rem;
+        align-items: start;
+    }
+    
+    .flow-steps {
+        .flow-steps {
+            grid-column: 1;
+        }
+    
+    .flow-description {
+        grid-column: 2;
+        padding: 1.5rem 1rem 1.5rem 0.5rem;
+        margin-left: -1rem; /* Este é o segredo para puxar para esquerda */
+        color: #555;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        border-left: 2px solid #ff6f61;
+        border-right: none;
+        background-color: transparent;
+        text-align: left;
+        align-self: center;
+    }
+    
+    .flow-image {
+        grid-column: 3;
+        padding-left: 1rem;
+        align-self: center;
+    }
+    
+    .flow-image img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+}
+
+/* Tablet (768px a 991px) */
+@media (max-width: 991px) {
+    .buttons-container {
+        gap: 4rem;
+        margin: 3rem 0;
+    }
+
+    .circle-button {
+        width: 140px;
+        height: 140px;
+        font-size: 1.8rem;
+        padding: 6rem;
+    }
+
+    .flow-box {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .flow-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .flow-steps,
+    .flow-description,
+    .flow-image {
+        grid-column: 1;
+        width: 100%;
+        margin: 0;
+    }
+
+    .step,
+    .step-one,
+    .step-two {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .flow-description {
+        padding: 1.5rem;
+        margin: 1rem 0;
+        border-left: none;
+        border-top: 2px solid #ff6f61;
+        border-bottom: 2px solid #ff6f61;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .flow-image img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .whatsapp-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-logo img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Mobile (até 767px) */
+@media (max-width: 767px) {
+    .como-funciona-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .introducao {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .buttons-container {
+        gap: 2rem;
+        margin: 2rem 0;
+        flex-direction: row; /* Mantém em linha (horizontal) */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        flex-wrap: wrap; /* Permite quebra de linha */
+        gap: 2rem; /* Espaçamento entre botões */
+        padding: 0 1rem; /* Adiciona espaço nas laterais */
+    }
+
+    .circle-button {
+        width: 120px;
+        height: 120px;
+        font-size: 1.5rem;
+        padding: 5rem;
+        margin: 0; /* Remove margens extras */
+    }
+
+    .flow-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .step,
+    .step-one,
+    .step-two {
+        max-width: 90%;
+        font-size: 1rem;
+    }
+
+    .flow-description {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .whatsapp-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-logo img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Pequenos dispositivos (até 480px) */
+@media (max-width: 480px) {
+    .como-funciona-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .introducao {
+        font-size: 1.2rem;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .circle-button {
+        width: 100px;
+        height: 100px;
+        font-size: 1.6rem;
+        padding: 5rem;
+    }
+
+    .flow-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .flow-description {
+        font-size: 1rem;
+    }
+}
+
+.botao-voltar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6f61;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.botao-voltar:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+
+/* Estilos específicos para a página de Consultoria */
+.consultoria-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.consultoria-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.consultoria-header {
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+/* Esconde todos os modais inicialmente */
+.consultoria-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Mantenha o resto do seu estilo de modal aqui */
+}
+
+/* Esconde o overlay inicialmente */
+.consultoria-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.consultoria-header h1 {
+    color: #114232;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.texto-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.texto-intro p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    padding: 0 0.5rem; /* Padding reduzido nas laterais */
+    max-width: 190%; /* Largura máxima do texto */
+    text-align: center;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.consultoria-buttons-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.consultoria-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.consultoria-oval-button {
+    background-color: #ff6f61;
+    color: #333;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultoria-oval-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.consultoria-oval-button h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.Premium-oval-button {
+    background-color: #ff6f61;
+    color: #ffff;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultoria-oval-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.consultoria-oval-button h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* Estilização da lista hierárquica */
+.consultoria-modal-content ul,
+.consultoria-modal-content li {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside; /* Marcadores fora do fluxo */
+}
+
+.consultoria-modal-content ul.lista-nivel-1,
+.consultoria-modal-content ul.lista-nivel-1 ul,
+.consultoria-modal-content ul.lista-nivel-1 li {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.consultoria-modal-content lista-nivel-1 > li {
+    position: relative;
+    padding-left: 1.8em !important;
+    text-indent: -1.8em;
+    margin-bottom: 0.5em;
+}
+
+.consultoria-modal-content ul.lista-nivel-1 {
+    list-style-type: square;
+}
+
+.consultoria-modal-content ul.lista-nivel-2,
+.consultoria-modal-content ul.lista-nivel-2 li {
+  padding-left: 30px !important;
+  margin-left: 0 !important;
+}
+
+.consultoria-modal-content lista-nivel-2 > li {
+    position: relative;
+    padding-left: 1.8em !important;
+    text-indent: -1.8em;
+}
+
+.consultoria-modal-content ul.lista-nivel-2 {
+    list-style-type: circle;
+}
+
+.consultoria-modal-content ul.lista-nivel-3,
+.consultoria-modal-content ul.lista-nivel-3 li {
+  padding-left: 60px !important;
+  margin-left: 0 !important;
+}
+
+.consultoria-modal-content lista-nivel-3 > li {
+    position: relative;
+    padding-left: 1.8em !important;
+    text-indent: -1.8em;
+}
+
+.consultoria-modal-content ul.lista-nivel-3 {
+    list-style-type: disc;
+}
+
+/* Palestra//
+
+/* Estilização da lista hierárquica */
+.palestras-modal-content ul.lista-nivel-1 {
+    list-style-type: square; /* Marcador quadrado para o nível 1 */
+    padding-left: 20px; /* Recuo base */
+}
+
+.palestras-modal-content ul.lista-nivel-2 {
+    list-style-type: circle; /* Marcador circular para o nível 2 */
+    padding-left: 30px; /* Recuo maior para subitens */
+}
+
+.palestras-modal-content ul.lista-nivel-3 {
+    list-style-type: disc; /* Marcador circular para o nível 2 */
+    padding-left: 30px; /* Recuo maior para subitens */
+}
+
+/* (Opcional) Ajuste geral para melhor espaçamento */
+.palestras-modal-content li {
+    margin-bottom: 8px; /* Espaçamento entre itens */
+}
+
+.palestras-modal-content ul.lista-simples {
+    list-style-type: square; /* Marcador quadrado para o nível 1 */
+    padding-left: 20px; /* Recuo base */     /* Espaço após o título */
+}
+
+/*workshop//
+
+/* Estilização da lista hierárquica */
+.treinamentos-modal-content ul.lista-nivel-1 {
+    list-style-type: square; /* Marcador quadrado para o nível 1 */
+    padding-left: 20px; /* Recuo base */
+}
+
+.treinamentos-modal-content ul.lista-nivel-2 {
+    list-style-type: circle; /* Marcador circular para o nível 2 */
+    padding-left: 30px; /* Recuo maior para subitens */
+}
+
+.treinamentos-modal-content ul.lista-nivel-3 {
+    list-style-type: disc; /* Marcador circular para o nível 2 */
+    padding-left: 30px; /* Recuo maior para subitens */
+}
+
+/* (Opcional) Ajuste geral para melhor espaçamento */
+.treinamentos-modal-content li {
+    margin-bottom: 8px; /* Espaçamento entre itens */
+}
+
+.treinamentos-modal-content ul.lista-simples {
+    list-style-type: square; /* Marcador quadrado para o nível 1 */
+    padding-left: 20px; /* Recuo base */     /* Espaço após o título */
+}
+
+
+
+
+/* Estilos para o modal */
+.consultoria-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 90vh;
+    background-color: #f8f3f2;
+    border-radius: 10px;
+    z-index: 101;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+.consultoria-modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: center; /* Garante que o texto também fique centralizado */
+    padding: 0 2rem; /* Adiciona padding nas laterais */
+}
+
+.consultoria-modal-header h2 {
+    color: #114232;
+    margin: 0;
+    padding: 0 40px;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.consultoria-close-button {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.consultoria-modal-content {
+    margin-bottom: 2rem;
+    color: #333;
+    line-height: 2.1;
+    font-size: 25px;
+    text-align: left; /* Centraliza o texto horizontalmente */
+    padding: 0 1.8rem; /* Adiciona um pequeno padding nas laterais */
+    max-width: 100%; /* Garante que o conteúdo não ultrapasse a largura do modal */
+}
+
+.consultoria-modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.consultoria-action-button {
+    background-color: #ff6f61;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+}
+
+.consultoria-action-button:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+.servico-card {
+    background-color: #f8b195;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.servico-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.servico-card h3 {
+    color: #114232;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.saiba-mais-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.saiba-mais-btn:hover {
+    background-color: #e0554b;
+}
+
+/* Modal */
+.servico-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: #ff6f61;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#modal-title {
+    color: #114232;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+#modal-text {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.modal-btn {
+    background-color: #114232;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+}
+
+.modal-btn:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .consultoria-header h1 {
+        font-size: 2rem;
+    }
+    
+    .texto-intro p {
+        font-size: 1.1rem;
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        padding: 1.5rem;
+    }
+    
+    #modal-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .modal-btn {
+        width: 100%;
+    }
+}
+
+/* Ajuste para desktop */
+@media (min-width: 992px) {
+    .texto-intro {
+        font-size: 1.9rem !important;
+        max-width: 80%;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .consultoria-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .consultoria-oval-button {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .consultoria-modal {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .consultoria-modal-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .consultoria-modal-footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .consultoria-action-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .consultoria-oval-button {
+        padding: 1.2rem 1.5rem;
+    }
+    
+    .consultoria-oval-button h3 {
+        font-size: 1rem;
+    }
+    
+    .consultoria-modal {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .consultoria-modal-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .consultoria-close-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+        top: -10px;
+        right: -10px;
+    }
+}
+
+/* Estilos específicos para a página de Consultoria premium */
+.consultoria-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.consultoria-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.consultoria-header {
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+/* Esconde todos os modais inicialmente */
+.consultoria-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Mantenha o resto do seu estilo de modal aqui */
+}
+
+/* Esconde o overlay inicialmente */
+.consultoria-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.consultoria-header h1 {
+    color: #114232;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.texto-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.texto-intro p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    padding: 0 0.5rem; /* Padding reduzido nas laterais */
+    max-width: 190%; /* Largura máxima do texto */
+    text-align: center;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.consultoria-buttons-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.consultoria-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.Premium-oval-button {
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultoria-oval-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.consultoria-oval-button h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.Premium-oval-button {
+    background-color: #004aad;
+    color: #ffff;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultoria-oval-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.consultoria-oval-button h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* Estilização da lista hierárquica */
+.consultoria-modal-content ul.lista-nivel-1 {
+    list-style-type: square; /* Marcador quadrado para o nível 1 */
+    padding-left: 20px; /* Recuo base */
+}
+
+.consultoria-modal-content ul.lista-nivel-2 {
+    list-style-type: circle; /* Marcador circular para o nível 2 */
+    padding-left: 30px; /* Recuo maior para subitens */
+}
+
+.consultoria-modal-content ul.lista-nivel-3 {
+    list-style-type: disc; /* Marcador circular para o nível 2 */
+    padding-left: 30px; /* Recuo maior para subitens */
+}
+
+/* (Opcional) Ajuste geral para melhor espaçamento */
+.consultoria-modal-content li {
+    margin-bottom: 8px; /* Espaçamento entre itens */
+}
+
+.consultoria-modal-content ul.lista-simples {
+    list-style-type: square; /* Marcador quadrado para o nível 1 */
+    padding-left: 20px; /* Recuo base */     /* Espaço após o título */
+}
+
+/* Estilos para o modal */
+.consultoria-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 90vh;
+    background-color: #f8f3f2;
+    border-radius: 10px;
+    z-index: 101;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+.consultoria-modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: center; /* Garante que o texto também fique centralizado */
+    padding: 0 2rem; /* Adiciona padding nas laterais */
+}
+
+.consultoria-modal-header h2 {
+    color: #114232;
+    margin: 0;
+    padding: 0 40px;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.consultoria-close-button-premium {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.consultoria-modal-content {
+    margin-bottom: 2rem;
+    color: #333;
+    line-height: 2.1;
+    font-size: 25px;
+    text-align: left; /* Centraliza o texto horizontalmente */
+    padding: 0 1.8rem; /* Adiciona um pequeno padding nas laterais */
+    max-width: 100%; /* Garante que o conteúdo não ultrapasse a largura do modal */
+}
+
+.consultoria-modal-footer-premium {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.consultoria-action-button-premium {
+    background-color: #004aad;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+}
+
+.consultoria-action-button:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+.servico-card {
+    background-color: #f8b195;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.servico-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.servico-card h3 {
+    color: #114232;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.saiba-mais-btn {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.saiba-mais-btn:hover {
+    background-color: #e0554b;
+}
+
+/* Modal */
+.servico-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: #004aad;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#modal-title {
+    color: #114232;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+#modal-text {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.modal-btn {
+    background-color: #114232;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+}
+
+.modal-btn:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .consultoria-header h1 {
+        font-size: 2rem;
+    }
+    
+    .texto-intro p {
+        font-size: 1.1rem;
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        padding: 1.5rem;
+    }
+    
+    #modal-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .modal-btn {
+        width: 100%;
+    }
+}
+
+/* Ajuste para desktop */
+@media (min-width: 992px) {
+    .texto-intro {
+        font-size: 1.9rem !important;
+        max-width: 80%;
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .consultoria-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .consultoria-oval-button {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .consultoria-modal {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .consultoria-modal-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .consultoria-modal-footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .consultoria-action-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .consultoria-oval-button {
+        padding: 1.2rem 1.5rem;
+    }
+    
+    .consultoria-oval-button h3 {
+        font-size: 1rem;
+    }
+    
+    .consultoria-modal {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .consultoria-modal-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .consultoria-close-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+        top: -10px;
+        right: -10px;
+    }
+}
+
+
+/* Estilos específicos para a página de Palestras */
+.palestras-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.palestras-header {
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.palestras-header h1 {
+    color: #114232;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.texto-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.texto-intro p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    padding: 0 0.5rem;
+    max-width: 190%;
+    text-align: center;
+}
+
+/* Estilos para os botões ovais */
+.palestras-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.palestras-buttons-container {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.palestras-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.palestras-oval-button {
+    background-color: #114232;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.palestras-oval-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.palestras-oval-button h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Estilos para o modal */
+.palestras-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 100vh;
+    background-color: #f8f3f2;
+    border-radius: 10px;
+    z-index: 101;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+.palestras-modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.palestras-modal-header h2 {
+    color: #114232;
+    margin: 0;
+    font-size: 3rem;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.palestras-close-button {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #114232;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.palestras-modal-content {
+    margin: 2rem auto;
+    color: #333;
+    line-height: 2;
+    font-size: 30px;
+    text-align: left;
+    padding: 0 2rem;
+    width: 90%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.palestras-modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.palestras-action-button {
+    background-color: #114232;
+    color: white;
+    padding: 1.5rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+}
+
+.palestras-action-button:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+/* Overlay */
+.palestras-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.botao-voltar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6f61;
+    color: #333;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.botao-voltar:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+/* Estilo do Botão do WhatsApp */
+.whatsapp-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.whatsapp-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Efeito de pulsação (opcional) */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.whatsapp-logo {
+    animation: pulse 2s infinite;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .palestras-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .palestras-oval-button {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .palestras-modal {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .palestras-modal-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .palestras-modal-content {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    
+    .palestras-modal-footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .palestras-action-button {
+        width: 100%;
+    }
+}
+
+/* Versão para mobile */
+@media (max-width: 768px) {
+    .botao-voltar {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .botao-voltar {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .palestras-oval-button {
+        padding: 1.2rem 1.5rem;
+    }
+    
+    .palestras-oval-button h3 {
+        font-size: 1rem;
+    }
+    
+    .palestras-modal {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .palestras-modal-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .palestras-close-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+        top: -10px;
+        right: -10px;
+    }
+    
+    .palestras-modal-content {
+        font-size: 18px;
+    }
+}
+
+/* Estilos específicos para a página de pacote workshop */
+.treinamentos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.treinamentos-header {
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.treinamentos-header h1 {
+    color: #114232;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.texto-intro {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+.texto-intro p {
+    font-size: 1.5rem;
+    line-height: 2.9rem;
+    font-weight: bold;
+    color: #333;
+    padding: 0 0.5rem; /* Padding reduzido nas laterais */
+    max-width: 190%; /* Largura máxima do texto */
+    text-align: center;
+}
+
+/* Estilos para os botões ovais */
+.treinamentos-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.treinamentos-buttons-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.treinamentos-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.treinamentos-oval-button {
+    background-color: #fac04b;
+    color: #114232;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.treinamentos-oval-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.treinamentos-oval-button h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Estilos para o modal */
+.treinamentos-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 90vh;
+    background-color: #f8f3f2;
+    border-radius: 10px;
+    z-index: 101;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+.treinamentos-modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.treinamentos-modal-header h2 {
+    color: #114232;
+    margin: 0;
+    font-size: 2rem;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.treinamentos-close-button {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fac04b;
+    color: #114232;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.treinamentos-modal-content {
+    margin: 2rem auto;
+    color: #333;
+    line-height: 1.8;
+    font-size: 25px;
+    text-align: left;
+    padding: 0 2rem;
+    width: 90%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.treinamentos-modal-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.treinamentos-action-button {
+    background-color: #fac04b;
+    color: #114232;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+}
+
+.treinamentos-action-button:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+/* Overlay */
+.treinamentos-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.botao-voltar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6f61;
+    color: #333;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.botao-voltar:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .treinamentos-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .treinamentos-oval-button {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .treinamentos-modal {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .treinamentos-modal-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .treinamentos-modal-content {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    
+    .treinamentos-modal-footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .treinamentos-action-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .treinamentos-oval-button {
+        padding: 1.2rem 1.5rem;
+    }
+    
+    .treinamentos-oval-button h3 {
+        font-size: 1rem;
+    }
+    
+    .treinamentos-modal {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .treinamentos-modal-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .treinamentos-close-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+        top: -10px;
+        right: -10px;
+    }
+    
+    .treinamentos-modal-content {
+        font-size: 18px;
+    }
+}
+
+
+/* Estilos específicos para a página de rh estratégico */
+.rh-estratégico-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.rh-estratégico-header {
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.rh-estratégico-header h1 {
+    color: #114232;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.texto-intro {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+.texto-intro p {
+    font-size: 1.5rem;
+    line-height: 2.9rem;
+    font-weight: bold;
+    color: #333;
+    padding: 0 0.5rem; /* Padding reduzido nas laterais */
+    max-width: 190%; /* Largura máxima do texto */
+    text-align: center;
+}
+
+/* Estilos para os botões ovais */
+.rh-estratégico-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.rh-estratégico-buttons-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.rh-estratégico-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.rh-estratégico-oval-button {
+    background-color: #4B0082;
+    color: #fac04b;
+    border: none;
+    border-radius: 50px;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rh-estratégico-oval-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rh-estratégico-oval-button h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Estilos para o modal */
+.rh-estratégico-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 90vh;
+    background-color: #f8f3f2;
+    border-radius: 10px;
+    z-index: 101;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+.rh-estratégico-modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.rh-estratégico-modal-header h2 {
+    color: #114232;
+    margin: 0;
+    font-size: 2rem;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.rh-estratégico-close-button {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4B0082;
+    color: #ffffff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rh-estratégico-modal-content {
+    margin: 2rem auto;
+    color: #333;
+    line-height: 1.8;
+    font-size: 25px;
+    text-align: left;
+    padding: 0 2rem;
+    width: 90%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.rh-estratégico-modal-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.rh-estratégico-action-button {
+    background-color: #4B0082;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+}
+
+.rh-estratégico-action-button:hover {
+    background-color: #fac04b;
+    transform: translateY(-3px);
+}
+
+/* Overlay */
+.rh-estratégico-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.botao-voltar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6f61;
+    color: #333;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.botao-voltar:hover {
+    background-color: #0a2b23;
+    transform: translateY(-3px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .rh-estratégico-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rh-estratégico-oval-button {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .rh-estratégico-modal {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .rh-estratégico-modal-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .rh-estratégico-modal-content {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    
+    .rh-estratégico-modal-footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .rh-estratégico-action-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .rh-estratégico-oval-button {
+        padding: 1.2rem 1.5rem;
+    }
+    
+    .rh-estratégico-oval-button h3 {
+        font-size: 1rem;
+    }
+    
+    .rh-estratégico-modal {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .rh-estratégico-modal-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .rh-estratégico-close-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+        top: -10px;
+        right: -10px;
+    }
+    
+    .rh-estratégico-modal-content {
+        font-size: 18px;
+    }
+}
+
+/*termina aqui rh estratégico//
+
+
+/*contato*/
+
+/* Estilos existentes (mantidos exatamente como estão) */
+#isolated-contact-container {
+    background-color: #f8b195;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-wrapper {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-left {
+    flex: 1;
+    padding: 3rem;
+    background-color: #f8b195;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title {
+    font-size: 2.3rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.8rem;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.contact-right {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 0.7rem 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    background: transparent;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-bottom-color: #ff6f61;
+    outline: none;
+}
+
+.form-textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 1.5rem 0;
+    border: none;
+}
+
+.contact-btn {
+    padding: 0.8rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-submit-btn {
+    background-color: #ff6f61;
+    color: white;
+    width: auto;
+    margin-top: 1rem;
+}
+
+.contact-back-btn {
+    background-color: #ff6f61;
+    color: white;
+    margin-top: 2rem;
+}
+
+.contact-btn:hover {
+    background-color: #e05548;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-buttons a {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.back-button-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.back-button-contact:hover {
+    background-color: #5a6268;
+    transform: translateX(-5px);
+}
+
+.back-button-contact svg {
+    transition: transform 0.3s ease;
+}
+
+.back-button-contact:hover svg {
+    transform: translateX(-3px);
+}
+
+.social-buttons a:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+}
+
+.instagram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+}
+
+.linkedin {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png');
+}
+
+/* Apenas ajustes de responsividade (sem alterar o layout) */
+@media (max-width: 1200px) {
+    .contact-wrapper {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-title {
+        font-size: 2rem;
+    }
+    
+    .contact-description {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    
+    .contact-left, 
+    .contact-right {
+        padding: 2rem;
+    }
+    
+    .social-buttons {
+        margin: 30px 0;
+    }
+    
+    .back-button-contact {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    #isolated-contact-container {
+        padding: 1rem;
+    }
+    
+    .contact-title {
+        font-size: 1.8rem;
+    }
+    
+    .contact-description {
+        font-size: 1.1rem;
+    }
+    
+    .social-buttons a {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .contact-btn {
+        padding: 0.7rem 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-left, 
+    .contact-right {
+        padding: 1.5rem;
+    }
+    
+    .social-buttons {
+        gap: 15px;
+    }
+    
+    .social-buttons a {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .back-button-contact {
+        padding: 8px 16px;
+    }
+}

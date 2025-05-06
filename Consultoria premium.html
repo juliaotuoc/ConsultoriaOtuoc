@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria - Otuoc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="consultoria-container">
+        <!-- Cabeçalho -->
+        <div class="consultoria-header">
+            <h1>CONSULTORIA PREMIUM</h1>
+        </div>
+        
+        <!-- Texto Introdutório -->
+        <div class="texto-intro">
+            <p>
+                Na era onde a saúde mental se tornou pilar estratégico, nossa Consultoria Premium oferece uma experiência completa e personalizável - combinando tecnologia, expertise clínica e engajamento presencial. 
+                Mais do que atender à legislação, criamos ecossistemas organizacionais que previnem crises, elevam a produtividade e fortalecem employer branding.
+            </p>
+        </div>
+        
+        <main class="consultoria-main">
+            <div class="consultoria-buttons-container-premium">
+                <!-- Linha 1 -->
+                <div class="consultoria-row">
+                    <button class="Premium-oval-button" onclick="openModal('estresse-minoritario')">
+                        <h3>Plataforma de Terapia</h3>
+                    </button>
+                    
+                    <button class="Premium-oval-button" onclick="openModal('capacitismo')">
+                        <h3>Workshops para Gestores (Presencial/Online)</h3>
+                    </button>
+
+                    <button class="Premium-oval-button" onclick="openModal('lgbtqia')">
+                        <h3>Ciclo de Palestras Premium</h3>
+                    </button>
+
+                    <button class="Premium-oval-button" onclick="openModal('diversidade')">
+                        <h3>Métricas Avançadas com IA</h3>
+                    </button>
+
+                    <button class="Premium-oval-button" onclick="openModal('Bem-estar')">
+                        <h3>Kit Bem-Estar Corporativo</h3>
+                    </button>
+                   
+                </div>
+            </div>
+    
+            <!-- Overlay -->
+            <div id="consultoria-overlay" class="consultoria-overlay"></div>
+    
+            <!-- Modal Estresse Minoritário -->
+            <div id="estresse-minoritario-modal" class="consultoria-modal">
+                <div class="consultoria-modal-header">
+                    <h2>PLATAFORMA DE TERAPIA</h2>
+                    <button class="consultoria-close-button-premium" onclick="closeModal()">×</button>
+                </div>
+                <div class="consultoria-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Acesso ilimitado a sessões com psicólogos de diversas abordagens</li>
+                    <li>Modalidades flexíveis: individuais, em grupo ou temáticas (luto, ansiedade, conflitos de equipes)</li>
+                    <li>Ambiente 100% seguro e sigiloso, com tecnologia de ponta para videoconferências</li>
+                    <li>Painel administrativo para acompanhamento de utilização (sem acesso ao conteúdo)</li>
+                </div>
+                <div class="consultoria-modal-footer-premium">
+                    <a href="https://forms.gle/5jivZLXFy7mKatVk9" target="_blank" class="consultoria-action-button-premium">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="consultoria-action-button-premium">Agende um bate papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal Capacitismo -->
+            <div id="capacitismo-modal" class="consultoria-modal">
+                <div class="consultoria-modal-header">
+                    <h2>WORKSHOP PARA LÍDERES</h2>
+                    <button class="consultoria-close-button-premium" onclick="closeModal()">×</button>
+                </div>
+                <div class="consultoria-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Versão presencial inclui:
+                        <ul class="lista-nivel-2">
+                        <li>Assessment individual de competências emocionais</li>
+                        <li>Laboratório de casos reais com supervisão</li>
+                    </ul>
+                </li>
+                    <ul class="lista-nivel-1">
+                    <li>Programa "Líder Curador" com:
+                        <ul class="lista-nivel-2">
+                        <li>Mentoria individual mensal</li>
+                        <li>Grupo de supervisão entre pares</li>
+                    </ul>
+                </li>
+            </ul>    
+                </div>
+                <div class="consultoria-modal-footer-premium">
+                    <a href="https://forms.gle/5jivZLXFy7mKatVk9" target="_blank" class="consultoria-action-button-premium">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="consultoria-action-button-premium">Agende um bate papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal LGBTQIAPN+ -->
+            <div id="lgbtqia-modal" class="consultoria-modal">
+                <div class="consultoria-modal-header">
+                    <h2>CICLO DE PALESTRAS PREMIUM (OLINE OU PRESENCIAL)</h2>
+                    <button class="consultoria-close-button-premium" onclick="closeModal()">×</button>
+                </div>
+                <div class="consultoria-modal-content">
+                    <ul class="lista-nivel-1">
+                        <li>Versão Online oferece:
+                            <ul class="lista-nivel-2">
+                            <li>Palestrantes renomados do mercado brasileiro</li>
+                            <li>Moderador exclusivo para debates aprofundados</li>
+                            <li>Sessão de perguntas e respostas direcionadas</li>
+                            <li>Material complementar adaptado à realidade das empresas nacionais</li>
+                        </ul>
+                    </li>    
+                        <ul class="lista-nivel-1">
+                        <li>Versão presencial oferece:
+                            <ul class="lista-nivel-2">
+                            <li>Coffee break temático</li>
+                            <li>Estação de bem-estar com quick massages</li>
+                            <li>Material físico exclusivo</li>
+                        </ul>
+                    </li>    
+                    </div>
+                <div class="consultoria-modal-footer-premium">
+                    <a href="https://forms.gle/5jivZLXFy7mKatVk9" target="_blank" class="consultoria-action-button-premium">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="consultoria-action-button-premium">Agende um bate papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal Diversidade -->
+            <div id="diversidade-modal" class="consultoria-modal">
+                <div class="consultoria-modal-header">
+                    <h2>MÉTRICAS E RELATÓRIOS</h2>
+                    <button class="consultoria-close-button-premium" onclick="closeModal()">×</button>
+                </div>
+                <div class="consultoria-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Diagnóstico organizacional completo (entrevistas e pesquisas validadas)</li>
+                    <li>Comparativo entre áreas/departamentos</li>
+                    <li>Indicadores-chave de saúde mental e clima organizacional</li>
+                    <li>Relatório final executivo com:</li>
+                        <ul class="lista-nivel-2">
+                        <li>Priorização de problemas</li>
+                        <li>Plano de ação personalizado</li>
+                        <li>Projeção de resultados em 3/6 meses</li>
+                </div>
+                <div class="consultoria-modal-footer-premium">
+                    <a href="https://forms.gle/5jivZLXFy7mKatVk9" target="_blank" class="consultoria-action-button-premium">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="consultoria-action-button-premium">Agende um bate papo</a>
+                </div>
+            </div>
+
+            <!-- Modal Diversidade -->
+            <div id="Bem-estar" class="consultoria-modal">
+                <div class="consultoria-modal-header">
+                    <h2>KIT BEM-ESTAR</h2>
+                    <button class="consultoria-close-button-premium" onclick="closeModal()">×</button>
+                </div>
+                <div class="consultoria-modal-content">
+                    <ul class="lista-nivel-1">
+                        <li>Caixa premium entregue trimestralmente:</li>
+                            <ul class="lista-nivel-2">
+                            <li>Materiais de autocuidado</li> 
+                            <li>Diário de gratidão corporativo</li>
+                            <li>Aromaterapia para escritório</li>
+                            <li>Acesso a app exclusivo com:</li>
+                                <ul class="lista-nivel-3">
+                                <li>Meditações guiadas</li>
+                                <li>Playlists para foco</li>
+                                <li>Microcursos de autocuidado</li>
+                </div>
+                <div class="consultoria-modal-footer-premium">
+                    <a href="https://forms.gle/5jivZLXFy7mKatVk9" target="_blank" class="consultoria-action-button-premium">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="consultoria-action-button-premium">Agende um bate papo</a>
+                </div>
+            </div>
+            </div>
+        </main>
+    
+    <!-- Botão Voltar -->
+    <a href="Julia Otuoc 1 index.html" class="botao-voltar">Voltar</a>
+    
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/5511917826489" target="_blank" class="whatsapp-logo">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

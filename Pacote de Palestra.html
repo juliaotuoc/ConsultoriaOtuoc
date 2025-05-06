@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestras - Otuoc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="palestras-container">
+        <!-- Cabeçalho -->
+        <div class="palestras-header">
+            <h1>PACOTE PALESTRAS</h1>
+        </div>
+        
+        <!-- Texto Introdutório -->
+        <div class="texto-intro">
+            <p>
+                Em um mundo corporativo que exige cada vez mais resiliência emocional, nosso Pacote de Palestras oferece insights práticos e cientificamente embasados para transformar a saúde mental da sua organização. 
+                Mais do que simples apresentações, criamos experiências de aprendizagem que engajam, inspiram e provocam mudanças reais no dia a dia profissional.
+            </p>
+        </div>
+        
+        <main class="palestras-main">
+            <div class="palestras-buttons-container">
+                <!-- Linha 1 -->
+                <div class="palestras-row">
+                    <button class="palestras-oval-button" onclick="openModal('Saúde-Emocional-Corporativa')">
+                        <h3>Catálogo Completo de Temas</h3>
+                    </button>
+                    
+                    <button class="palestras-oval-button" onclick="openModal('Saúde-da-Mulher')">
+                        <h3>Flexibilidade Total</h3>
+                    </button>
+
+                    <button class="palestras-oval-button" onclick="openModal('Prevenção-ao-Suicídio')">
+                        <h3>Recursos Premium</h3>
+                    </button>
+
+                    <button class="palestras-oval-button" onclick="openModal('Equilíbrio-Digital')">
+                        <h3>Métricas de Impacto</h3>
+                    </button>
+
+                </div>
+            </div>
+    
+            <!-- Overlay -->
+            <div id="palestras-overlay" class="palestras-overlay"></div>
+    
+            <!-- Modal Saúde Emocional Corporativa -->
+            <div id="Saúde-Emocional-Corporativa-modal" class="palestras-modal">
+                <div class="palestras-modal-header">
+                    <h2>CATÁLOGO COMPLETO DOS TEMAS</h2>
+                    <button class="palestras-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="palestras-modal-content">
+                    <p>Mais de 50 opções organizadas em 6 eixos estratégicos:</p>
+
+                        <ul class="lista-nivel-1">
+                        <li>Saúde Mental no Trabalho
+                            <ul class="lista-nivel-2">
+                            <li>"Síndrome do Impostor: como superar"</li>
+                            <li>"Gestão de Emoções em Alta Pressão"</li>
+                        </ul> 
+                    </li> 
+                        <li>Liderança Humanizada
+                            <ul class="lista-nivel-2">
+                            <li>"Autoridade sem Autoritarismo"</li>
+                            <li>"Liderança Servidora na Prática"</li>
+                        </ul>
+                    </li>                           
+                        <li>Produtividade Sustentável
+                            <ul class="lista-nivel-2">
+                            <li>"Deep Work na Era das Distrações"</li>
+                            <li>"Mitos da Multitarefa"</li>
+                        </ul>
+                    </li> 
+                        <li>Cultura Organizacional
+                            <ul class="lista-nivel-2">
+                            <li>"Como Construir uma Empresa Psicologicamente Segura"</li>
+                            <li>"O Poder dos Rituais Corporativos"</li>
+                        </ul>
+                    </li>  
+                        <li>Inovação e Criatividade
+                        <ul class="lista-nivel-2">
+                            <li>"Mindset de Crescimento para Times"</li>
+                            <li>"Falhar Bem: A Arte do Aprendizado"</li>
+                        </ul>
+                    </li> 
+                        <li>Futuro do Trabalho
+                        <ul class="lista-nivel-2">
+                            <li>"Gerenciando Equipes Híbridas"</li>
+                            <li>"A Inteligência Emocional na Era da IA"</li>
+                        </ul>
+                    </li> 
+                </div>
+                <div class="palestras-modal-footer">
+                    <a href="https://forms.gle/ohynQfH4pDhH7uKP8" target="_blank" class="palestras-action-button">Consulte nosso catálogo</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="palestras-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal Saúde da Mulher -->
+            <div id="Saúde-da-Mulher-modal" class="palestras-modal">
+                <div class="palestras-modal-header">
+                    <h2>FLEXIBILIDADE TOTAL</h2>
+                    <button class="palestras-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="palestras-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Adaptação de conteúdo para:
+                        <ul class="lista-nivel-2">
+                        <li>Diferentes níveis hierárquicos</li>
+                        <li>Setores específicos (saúde, tecnologia, varejo etc.)</li>
+                        <li>Momentos organizacionais (fusões, expansões, crises)</li>
+                    </ul>
+                </li> 
+                    <li>Formatos variados:
+                        <ul class="lista-nivel-2">
+                        <li>Masterclass expositiva</li>
+                        <li>Painel de debates</li>
+                        <li>Contação de casos</li>
+                    </ul>
+                </li>
+                </div>
+                <div class="palestras-modal-footer">
+                    <a href="https://forms.gle/ohynQfH4pDhH7uKP8" target="_blank" class="palestras-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="palestras-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+    
+            <!-- Modal Prevenção ao Suicídio -->
+            <div id="Prevenção-ao-Suicídio-modal" class="palestras-modal">
+                <div class="palestras-modal-header">
+                    <h2>RECURSOS PREMIUM</h2>
+                    <button class="palestras-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="palestras-modal-content">
+                    <ul class="lista-nivel-1">
+                    <li>Certificado digital com carga horária</li>
+                    <li>Relatório completo de participação e engajamento, incluindo:</li>
+                        <ul class="lista-nivel-2">
+                        <li>Nível de interação dos participantes</li>
+                        <li>Principais dúvidas e temas de interesse</li>
+                        <li>Dados consolidados para avaliação de impacto</li>
+                </div>
+                <div class="palestras-modal-footer">
+                    <a href="https://forms.gle/ohynQfH4pDhH7uKP8" target="_blank" class="palestras-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="palestras-action-button">Agende uma palestra</a>
+                </div>
+            </div>
+    
+            <!-- Modal Equilíbrio Digital -->
+            <div id="Equilíbrio-Digital-modal" class="palestras-modal">
+                <div class="palestras-modal-header">
+                    <h2>MÉTRICAS DE IMPACTO</h2>
+                    <button class="palestras-close-button" onclick="closeModal()">×</button>
+                </div>
+                <div class="palestras-modal-content">
+                <ul class="lista-nivel-1">
+                <li>Relatório Pós-Evento (em até 5 dias úteis) com:
+                    <ul class="lista-nivel-2">
+                    <li>Nível de engajamento dos participantes</li>
+                    <li>Principais insights e dúvidas surgidas</li>
+                    <li>Sugestões práticas para aplicar os conceitos</li>
+                </ul>
+            </li>
+                <li>Métrica Simples de Impacto:
+                    <ul class="lista-nivel-2">
+                    <li>Pesquisa rápida de satisfação (envio no dia e coleta em 48h)</li>
+                    <li>Indicador de "intenção de aplicar" os aprendizados</li>
+                </ul>
+            </li>            
+                </div>
+                <div class="palestras-modal-footer">
+                    <a href="https://forms.gle/ohynQfH4pDhH7uKP8" target="_blank" class="palestras-action-button">Solicite um orçamento</a>
+                    <a href="https://calendly.com/juliaotuoc/otuoc-consultoria" target="_blank" class="palestras-action-button">Agende um bate papo</a>
+                </div>
+            </div>
+                </div>
+            </div>
+        </main>
+    
+    <!-- Botão Voltar -->
+    <a href="Julia Otuoc 1 index.html" class="botao-voltar">Voltar</a>
+    
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/5511917826489" target="_blank" class="whatsapp-logo">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
