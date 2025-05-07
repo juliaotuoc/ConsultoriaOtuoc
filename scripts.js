@@ -1,36 +1,45 @@
 // Menu dropdown responsivo veja como funcio
 document.addEventListener('DOMContentLoaded', function() {
-    // Verifica se o elemento existe para não interferir com outros códigos
-    const contactForm = document.getElementById('custom-contact-form');
-    const backButton = document.querySelector('#custom-contact-page .back-button');
+    // Variável para controlar o scroll
+    let scrollPosition = 0;
     
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Validação simples
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
-            
-            if (name && email && phone && message) {
-                // Aqui você pode adicionar o código para enviar o formulário
-                alert('Formulário enviado com sucesso!');
-                contactForm.reset();
-            } else {
-                alert('Por favor, preencha todos os campos obrigatórios.');
-            }
-        });
-    }
+    // Função para abrir modal
+    window.openFlow = function(flowId) {
+        scrollPosition = window.pageYOffset;
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById(flowId + '-flow').style.display = 'block';
+        document.body.classList.add('modal-open');
+        document.body.style.top = `-${scrollPosition}px`;
+    };
     
-    if (backButton) {
-        backButton.addEventListener('click', function() {
-            // Adicione aqui a ação do botão voltar
-            window.history.back();
+    // Função para fechar modal
+    window.closeFlow = function() {
+        document.getElementById('overlay').style.display = 'none';
+        document.querySelectorAll('.flow-box').forEach(box => {
+            box.style.display = 'none';
         });
-    }
+        document.body.classList.remove('modal-open');
+        window.scrollTo(0, scrollPosition);
+        document.body.style.top = '';
+    };
+    
+    // Fechar ao clicar no overlay
+    document.getElementById('overlay').addEventListener('click', closeFlow);
+    
+    // Fechar ao pressionar ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeFlow();
+    });
+    
+    // Correção para o botão Voltar do navegador
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            document.body.classList.remove('modal-open');
+            document.body.style.top = '';
+        }
+    });
 });
+
 
 //veja como funciona termina
 

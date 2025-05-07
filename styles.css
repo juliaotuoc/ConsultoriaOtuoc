@@ -760,6 +760,17 @@ body {
     transform: translateY(-3px);
 }
 
+/* GARANTE QUE A BARRA DE ROLAGEM SEMPRE FIQUE VISÍVEL */
+html {
+    overflow-y: scroll !important; /* Força a barra sempre visível */
+}
+
+body.modal-open {
+    overflow: hidden; /* Só aplica quando modal estiver aberto */
+    position: fixed;
+    width: 100%;
+}
+
 /* Responsividade - Desktop */
 @media (min-width: 992px) {
     .como-funciona-header h1 {
