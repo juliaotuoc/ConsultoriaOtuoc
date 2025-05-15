@@ -462,7 +462,7 @@ body {
 
 .flow-header h2 {
     color: #114232;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     text-align: center;
     width: 100%;
     margin: 0;
@@ -497,26 +497,30 @@ body {
 
 /* Layout do conteúdo principal - Reestruturado */
 .flow-content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
     gap: 2rem;
+    align-items: stretch; /* Faz os itens terem a mesma altura */
     width: 100%;
+    min-height: 100%; /* Garante altura mínima */
 }
 
 .flow-steps {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    width: 100%;
+    gap: 1.5rem;
+    justify-content: center; /* Centraliza verticalmente */
 }
 
 .step, .step-one, .step-two, .step-tree, .step-four {
-    padding: 1rem;
-    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 0 1rem 0;
+    border-radius: 8px;
+    height: 100%; /* Ocupa toda altura disponível */
     box-sizing: border-box;
 }
 
@@ -528,24 +532,18 @@ body {
 
 .step h3, .step-one h3, .step-two h3, .step-tree h3, .step-four h3 {
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 2.4rem;
 }
 
 .flow-description {
-    padding: 1.5rem;
-    line-height: 1.8;
-    color: #555;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    border-top: 2px solid #ff6f61;
-    border-bottom: 2px solid #ff6f61;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 2rem;
-    margin: 1.5rem auto;
-    width: 100%;
+    border-left: 2px solid #ff6f61;
+    text-align: center;
+    height: 100%; /* Mesma altura que os steps */
     box-sizing: border-box;
-    max-width: 90%;
-    margin: 1rem 0;
 }
 
 .flow-image {
@@ -608,20 +606,37 @@ body {
         padding: 8rem;
     }
     
+    
     .flow-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        grid-template-columns: 1fr 1fr; /* Mantém colunas iguais */
+        gap: 3rem;
     }
     
     .flow-steps {
-        grid-column: 1;
+        gap: 2rem;
+    }
+
+    .step, .step-one, .step-two, .step-tree, .step-four {
+        padding: 2.5rem;
+    }
+    
+    .flow-description {
+        padding: 3rem;
+    }
+
+
+    @media (min-width: 992px) {
+        .step, .step-one, .step-two, .step-tree, .step-four {
+            padding: 2rem; /* Mais espaço em desktop */
+            font-size: 1.5rem; /* Fonte maior em desktop */
+            min-height: 150px; /* Altura maior em desktop */
+        }
     }
     
     .flow-description {
         grid-column: 2;
         border-left: 1.2px solid #ff6f61;
-        font-size: 2rem; /* Tamanho maior em desktop */
+        font-size: 2.7rem; /* Tamanho maior em desktop */
         line-height: 2; /* Espaçamento maior em desktop */
         max-width: 80%; /* Largura um pouco maior */
         border-top: none;
@@ -690,7 +705,18 @@ body {
     .flow-description {
         font-size: 1rem;
     }
-}
+
+    .flow-content {
+        grid-template-columns: 1fr; /* Uma coluna em mobile */
+    }   
+    .flow-description {
+        border-left: none;
+        border-top: 2px solid #ff6f61;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+    }
+
 
 /* Pequenos dispositivos (até 480px) */
 @media (max-width: 480px) {
