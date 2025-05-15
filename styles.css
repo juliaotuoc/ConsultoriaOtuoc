@@ -533,14 +533,18 @@ body {
 
 .flow-description {
     padding: 1.5rem;
+    line-height: 1.8;
     color: #555;
     font-size: 1.1rem;
     line-height: 1.6;
     border-top: 2px solid #ff6f61;
     border-bottom: 2px solid #ff6f61;
     text-align: center;
+    padding: 2rem;
+    margin: 1.5rem auto;
     width: 100%;
     box-sizing: border-box;
+    max-width: 90%;
     margin: 1rem 0;
 }
 
@@ -616,11 +620,14 @@ body {
     
     .flow-description {
         grid-column: 2;
-        border-left: 2px solid #ff6f61;
+        border-left: 1.2px solid #ff6f61;
+        font-size: 2rem; /* Tamanho maior em desktop */
+        line-height: 2; /* Espaçamento maior em desktop */
+        max-width: 80%; /* Largura um pouco maior */
         border-top: none;
         border-bottom: none;
         border-right: none;
-        text-align: left;
+        text-align: center;
         margin: 0;
     }
     
