@@ -431,14 +431,14 @@ body {
     z-index: 100;
 }
 
-/* Caixa de Fluxo */
+/* Caixa de Fluxo - Reestruturada */
 .flow-box {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 120%;
+    width: 95%;
     max-width: 1350px;
     max-height: 90vh;
     background-color: white;
@@ -447,6 +447,7 @@ body {
     z-index: 200;
     overflow-y: auto;
     padding: 2rem;
+    box-sizing: border-box; /* Adicionado para incluir padding no cálculo da largura */
 }
 
 .flow-header {
@@ -464,16 +465,17 @@ body {
     font-size: 2.4rem;
     text-align: center;
     width: 100%;
+    margin: 0;
+    padding: 0 40px; /* Espaço para o botão de fechar */
 }
 
-.close-button-consultoria-básica {
+/* Estilos dos botões de fechar unificados */
+[class^="close-button-"] {
     position: absolute;
     right: 0;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #ff6f61;
-    color: #333;
     border: none;
     font-size: 1.5rem;
     display: flex;
@@ -483,214 +485,76 @@ body {
     transition: all 0.3s ease;
 }
 
-.close-button-consultoria-premium{
-    position: absolute;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #004aad;
-    color: #ffff;
-    border: none;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+.close-button-consultoria-básica { background-color: #ff6f61; color: #333; }
+.close-button-consultoria-premium { background-color: #004aad; color: #ffff; }
+.close-button-pacote-workshop { background-color: #fac04b; color: #114232; }
+.close-button-rh-estratégico { background-color: #4B0082; color: #fff; }
+.close-button-pacote-palestras { background-color: #114232; color: #ffffff; }
 
-.close-button-pacote-workshop{
-    position: absolute;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #fac04b;
-    color:#114232;
-    border: none;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.close-button-rh-estratégico{
-    position: absolute;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #4B0082;
-    color:#fff;
-    border: none;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.close-button-pacote-palestras{
-    position: absolute;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #114232;
-    color:#ffffff;
-    border: none;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.close-button:hover {
-    background-color: #e0554b;
+[class^="close-button-"]:hover {
     transform: scale(1.1);
 }
 
-/* Layout do conteúdo principal */
+/* Layout do conteúdo principal - Reestruturado */
 .flow-content {
-    display: grid;
-    grid-template-columns: 55% 30% 20%; /* Colunas ajustadas */
+    display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    align-items: start;
+    gap: 2rem;
+    width: 100%;
 }
 
 .flow-steps {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
 }
 
-.step {
-    background-color: #ff6f61;
+.step, .step-one, .step-two, .step-tree, .step-four {
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
-    max-width: 57%;
-    margin-right: -50px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+    box-sizing: border-box;
 }
 
-.step h3 {
-    color: #333;
+.step { background-color: #ff6f61; color: #333; }
+.step-one { background-color: #114232; color: white; }
+.step-two { background-color: #fac04b; color: #114232; }
+.step-tree { background-color: #004aad; color: #ffffff; }
+.step-four { background-color: #4B0082; color: #ffffff; }
+
+.step h3, .step-one h3, .step-two h3, .step-tree h3, .step-four h3 {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
-}
-
-.step p {
-    color: #333;
-}
-
-.step-one {
-    background-color: #114232;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 57%;
-    margin-right: -50px;
-}
-
-.step-one h3 {
-    color: white;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.step-one p {
-    color: white;
-}
-
-.step-two {
-    background-color: #fac04b;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 57%;
-    margin-right: -50px;
-}
-
-.step-two h3 {
-    color: #114232;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.step-two p {
-    color: #114232;
-}
-
-
-.step-tree {
-    background-color: #004aad;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 57%;
-    margin-right: -50px;
-}
-
-.step-tree h3 {
-    color: #ffffff;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.step-tree p {
-    color: #ffffff;
-}
-
-.step-four {
-    background-color: #4B0082;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 57%;
-    margin-right: -50px;
-}
-
-.step-four h3 {
-    color: #ffffff;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.step-four p {
-    color: #ffffff;
 }
 
 .flow-description {
-    grid-column: 2;
-    padding: 1.2rem 1rem 1.5rem 0.5rem;
-    margin-left: -18rem; /* Este é o segredo para puxar para esquerda */
-    margin-right: 8rem;
+    padding: 1.5rem;
     color: #555;
-    font-size: 1.8rem;
-    line-height: 1.8;
-    border-left: 2px solid #ff6f61;
-    border-right: none;
-    background-color: transparent;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    border-top: 2px solid #ff6f61;
+    border-bottom: 2px solid #ff6f61;
     text-align: center;
-    align-self: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1rem 0;
 }
 
 .flow-image {
-    grid-column: 3;
-    padding-left: 1rem;
-    align-self: center;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 .flow-image img {
-    max-width: 300%;
-    margin-left: -10rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .flow-footer {
@@ -698,77 +562,29 @@ body {
     margin-top: 2rem;
     padding-top: 1.5rem;
     border-top: 2px solid #f0f0f0;
-}
-
-.flow-button-consultoria-básica{
-    display: inline-block;
-    background-color: #ff6f61;
-    color: #333;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.flow-button-consultoria-premium{
-    display: inline-block;
-    background-color: #004aad;
-    color: #ffffff;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.flow-button-pacote-workshop{
-    display: inline-block;
-    background-color: #fac04b;
-    color: #333;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.flow-button-rh-estratégico{
-    display: inline-block;
-    background-color: #4B0082;
-    color: #fff;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.flow-button-pacote-palestra{
-    display: inline-block;
-    background-color: #114232;
-    color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.flow-button:hover {
-    background-color: #0a2b23;
-    transform: translateY(-3px);
-}
-
-/* GARANTE QUE A BARRA DE ROLAGEM SEMPRE FIQUE VISÍVEL */
-html {
-    overflow-y: scroll !important; /* Força a barra sempre visível */
-}
-
-body.modal-open {
-    overflow: hidden; /* Só aplica quando modal estiver aberto */
-    position: fixed;
     width: 100%;
+}
+
+/* Estilos dos botões de fluxo unificados */
+[class^="flow-button-"] {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+}
+
+.flow-button-consultoria-básica { background-color: #ff6f61; color: #333; }
+.flow-button-consultoria-premium { background-color: #004aad; color: #ffffff; }
+.flow-button-pacote-workshop { background-color: #fac04b; color: #333; }
+.flow-button-rh-estratégico { background-color: #4B0082; color: #fff; }
+.flow-button-pacote-palestra { background-color: #114232; color: white; }
+
+[class^="flow-button-"]:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
 }
 
 /* Responsividade - Desktop */
@@ -785,45 +601,32 @@ body.modal-open {
         width: 180px;
         height: 180px;
         font-size: 2.3rem;
+        padding: 8rem;
     }
     
     .flow-content {
         display: grid;
-        grid-template-columns: 55% 25% 20%; /* Colunas ajustadas */
-        gap: 1.5rem;
-        align-items: start;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
     }
     
     .flow-steps {
-        .flow-steps {
-            grid-column: 1;
-        }
+        grid-column: 1;
+    }
     
     .flow-description {
         grid-column: 2;
-        padding: 1.5rem 1rem 1.5rem 0.5rem;
-        margin-left: -1rem; /* Este é o segredo para puxar para esquerda */
-        color: #555;
-        font-size: 1.1rem;
-        line-height: 1.6;
         border-left: 2px solid #ff6f61;
+        border-top: none;
+        border-bottom: none;
         border-right: none;
-        background-color: transparent;
         text-align: left;
-        align-self: center;
+        margin: 0;
     }
     
     .flow-image {
-        grid-column: 3;
-        padding-left: 1rem;
-        align-self: center;
+        grid-column: 1 / span 2;
     }
-    
-    .flow-image img {
-        max-width: 100%;
-        margin-left: 0;
-    }
-}
 }
 
 /* Tablet (768px a 991px) */
@@ -845,50 +648,8 @@ body.modal-open {
         padding: 1.5rem;
     }
 
-    .flow-content {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .flow-steps,
-    .flow-description,
-    .flow-image {
-        grid-column: 1;
-        width: 100%;
-        margin: 0;
-    }
-
-    .step,
-    .step-one,
-    .step-two {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .flow-description {
-        padding: 1.5rem;
-        margin: 1rem 0;
-        border-left: none;
-        border-top: 2px solid #ff6f61;
-        border-bottom: 2px solid #ff6f61;
-        text-align: center;
-        font-size: 1.4rem;
-    }
-
-    .flow-image img {
-        max-width: 100%;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .whatsapp-logo {
-        width: 50px;
-        height: 50px;
-    }
-
-    .whatsapp-logo img {
-        width: 120px;
-        height: 120px;
+    .flow-header h2 {
+        font-size: 2rem;
     }
 }
 
@@ -906,12 +667,6 @@ body.modal-open {
     .buttons-container {
         gap: 2rem;
         margin: 2rem 0;
-        flex-direction: row; /* Mantém em linha (horizontal) */
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
-        flex-wrap: wrap; /* Permite quebra de linha */
-        gap: 2rem; /* Espaçamento entre botões */
-        padding: 0 1rem; /* Adiciona espaço nas laterais */
     }
 
     .circle-button {
@@ -919,33 +674,14 @@ body.modal-open {
         height: 120px;
         font-size: 1.5rem;
         padding: 5rem;
-        margin: 0; /* Remove margens extras */
     }
 
     .flow-header h2 {
         font-size: 1.8rem;
     }
 
-    .step,
-    .step-one,
-    .step-two {
-        max-width: 90%;
-        font-size: 1rem;
-    }
-
     .flow-description {
-        font-size: 1.2rem;
-        padding: 1rem;
-    }
-
-    .whatsapp-logo {
-        width: 50px;
-        height: 50px;
-    }
-
-    .whatsapp-logo img {
-        width: 70px;
-        height: 70px;
+        font-size: 1rem;
     }
 }
 
@@ -960,23 +696,18 @@ body.modal-open {
     }
 
     .buttons-container {
-        flex-direction: column;
         gap: 1.5rem;
     }
 
     .circle-button {
         width: 100px;
         height: 100px;
-        font-size: 1.6rem;
-        padding: 5rem;
+        font-size: 1.2rem;
+        padding: 4rem;
     }
 
     .flow-header h2 {
         font-size: 1.5rem;
-    }
-
-    .flow-description {
-        font-size: 1rem;
     }
 }
 
