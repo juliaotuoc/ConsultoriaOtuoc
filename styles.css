@@ -498,29 +498,30 @@ body {
 /* Layout do conteúdo principal - Reestruturado */
 .flow-content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    display: flex;
     gap: 2rem;
-    align-items: stretch; /* Faz os itens terem a mesma altura */
     width: 100%;
-    min-height: 100%; /* Garante altura mínima */
+    align-items: stretch;
 }
 
 .flow-steps {
+    width: 350px; /* Largura fixa igual às suas caixas */
+    min-width: 450px; /* Impede que diminua */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    justify-content: center; /* Centraliza verticalmente */
 }
 
 .step, .step-one, .step-two, .step-tree, .step-four {
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 8px;
-    height: 100%; /* Ocupa toda altura disponível */
+    min-height: auto;
+    height: auto; /* Ocupa toda altura disponível */
     box-sizing: border-box;
 }
 
@@ -536,14 +537,20 @@ body {
 }
 
 .flow-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex: 1; /* Ocupa TODO o espaço restante */
     padding: 2rem;
-    border-left: 2px solid #ff6f61;
-    text-align: center;
-    height: 100%; /* Mesma altura que os steps */
-    box-sizing: border-box;
+    background: rgba(0,0,0,0.03); /* Apenas para visualização */
+    
+    /* CONTROLE DO TEXTO */
+    column-count: 2; /* Divide em 2 colunas */
+    column-gap: 3rem;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    
+    /* Otimização para não quebrar layout */
+    break-inside: avoid;
+    page-break-inside: avoid;
 }
 
 .flow-image {
@@ -606,14 +613,14 @@ body {
         padding: 8rem;
     }
     
-    
     .flow-content {
-        grid-template-columns: 1fr 1fr; /* Mantém colunas iguais */
-        gap: 3rem;
+        column-width: 450px; /* Colunas um pouco mais largas em desktop */
+        padding: 3rem;
     }
     
     .flow-steps {
         gap: 2rem;
+        min-width: 300px; /* Garante que não ficará mais estreita */
     }
 
     .step, .step-one, .step-two, .step-tree, .step-four {
@@ -621,7 +628,7 @@ body {
     }
     
     .flow-description {
-        padding: 3rem;
+        column-count: 1; /* Volta para 1 coluna em telas menores */
     }
 
 
